@@ -15,7 +15,11 @@ function Nav() {
 
   return (
     <nav className="df gap-6 px-4 xs:px-6 py-4">
-      <p className="mr-auto font-bold text-xl">TRUSEVE</p>
+      <img
+        className="mr-auto h-12"
+        src="/truseve.png"
+        alt="Truseve logo"
+      />
 
       <div className="lg:hidden">
         <button
