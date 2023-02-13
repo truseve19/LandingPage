@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-monserret overflow-x-hidden;
+  }
+
+  
+  body ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  body ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  body ::-webkit-scrollbar-thumb {
+    background-color: #DBDBDE;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  body ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(66, 66, 66, 0.4);
+  }
+  
+  input,
+  textarea,
+  select {
+    @apply block w-full p-2 focus:outline-none text-gray-900;
+  }
+
+  button:where(:not(.not-theme)) {
+    @apply 
+      w-fit px-4 py-1 
+      rounded-[5px] transition-colors 
+      bg-primary text-white 
+      hover:bg-[#0d3ce9] hover:shadow-lg
+    ;
+  }
+
+  label {
+    @apply block mb-1;
+  }
+
+  section {
+    @apply px-4 py-8 sm:py-12 mdb:py-16 lg:px-6 xl:py-20;
+  }
+
+  svg {
+    @apply w-6 h-6 cursor-pointer;
+  }
+}
+
+@layer components {
+  .df {
+    @apply flex items-center gap-2;
+  }
+
+  .dfc {
+    @apply flex flex-col gap-2;
+  }
+
+  .dc {
+    @apply flex items-center justify-center gap-2;
+  }
+
+  .theme-h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-[55px] xl:leading-[1.2] font-bold;
+  }
+  
+  .theme-h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-center;
+  }
+}
+
+nav {
+  border-bottom: 1px solid rgb(223, 227, 231);
+  background-color: rgba(234, 237, 240, 0.4);
+  backdrop-filter: blur(8px);
+  @apply sticky top-0 z-10;
+}
+
+.nav-wrapper {
+  @apply 
+    lg:-mb-2 
+    animate-enter-opacity 
+    items-start flex-wrap gap-2 sm:gap-6 md:gap-8 lg:gap-10 
+    fixed lg:static inset-x-0 top-[65px] 
+    max-lg:h-[calc(100vh-4rem)] 
+    max-sm:p-4 max-lg:p-6 
+    max-lg:z-20 
+    max-lg:bg-[#F9F9F9] 
+    text-sm xl:text-base
+  ;
+}
+
+.nav-products {
+  @apply 
+    lg:animate-enter-opacity 
+    absolute top-[70px] max-sm:inset-x-4 max-lg:inset-x-6 lg:top-12 lg:left-1/2 lg:-translate-x-1/2 
+    sm:grid sm:grid-cols-3 lg:hidden group-hover:lg:grid 
+    lg:grid-cols-[repeat(6,160px)] xl:grid-cols-[repeat(6,180px)] 2xl:grid-cols-[repeat(6,200px)]
+    lg:p-6 lg:rounded-xl lg:shadow-md
+    lg:bg-[#F9F9F9] 
+  ;
+}
+
+.service-grid {
+  @apply 
+    grid-cols-4 xs:grid-cols-5 
+    mdb:grid-cols-[repeat(5,120px)] 
+    mdb:grid-rows-[repeat(2,120px)] 
+    xl:grid-cols-[repeat(5,168px)] 
+    xl:grid-rows-[repeat(2,168px)]
+  ;
+}
+
+.choose-blur-bg {
+  backdrop-filter: blur(40px);
+  background: radial-gradient(90.16% 143.01% at 15.32% -34.58%, rgba(165, 239, 255, 0.02) 0%, rgba(110, 191, 244, 0.00447917) 77.08%, rgba(70, 144, 213, 0) 100%);
+}
+
+.testimonial {
+  background: linear-gradient(184.33deg, rgba(83, 105, 252, 0.34) -50%, rgba(97, 147, 251, 0.11) 40%, rgba(104, 168, 250, 0) 60%);
+}
+
+.migration-bg {
+  background: url(../public/img/migration.webp) no-repeat center/cover;
+}
+
+.contact-form-divider-bg {
+  clip-path: polygon(0 72%, 100% 37%, 100% 99%, 0% 100%);
+  background: linear-gradient(170deg, #3B54F7 14.64%, #4566F7 29.01%, #5F97F9 80.07%, #68A8FA 93.47%);
+}
+
+.migration-content-left.active::before {
+  @apply h-1.5 w-full absolute bottom-0 left-0 bg-primary;
+  content: "";
+  animation: progress 8s linear;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+#cursor {
+  @apply w-[3px] h-6 md:h-7 lg:h-9 xl:h-10;
+  animation: cursorMove .75s step-end infinite;
+}
+
+@keyframes cursorMove {
+  from {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: black;
+  }
+}
