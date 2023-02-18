@@ -11,7 +11,7 @@ import ConnectUsBtn from "../Common/ConnectUsBtn";
 
 function Nav() {
   const [active, setActive] = useState("")
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   return (
     <nav className="df gap-6 px-4 xs:px-6 py-4">
@@ -34,7 +34,7 @@ function Nav() {
         </button>
       </div>
 
-      <div className={`nav-wrapper ${open ? "flex" : "hidden"}`}>
+      <div className={`nav-wrapper ${open ? "" : "max-lg:hidden"}`}>
         <div className="group shrink-0 lg:pb-2">
           <button
             className="not-theme text-[#191c1f] lg:hover:text-primary max-lg:py-1 max-lg:px-1.5 max-lg:bg-white lg:py-1"

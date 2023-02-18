@@ -41,7 +41,7 @@ const data = [
 
 function Choose() {
   return (
-    <section className="bg-light relative isolate">
+    <section className="bg-light relative isolate overflow-x-hidden">
       <div className="choose-blur-bg -mt-px absolute inset-0 z-0"></div>
       <Image
         className="max-sm:w-24 blur-[2px] absolute -top-8 -right-6 z-[1]"

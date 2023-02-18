@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Services() {
   return (
-    <section className="bg-primary text-white relative">
+    <section className="bg-primary text-white relative overflow-x-hidden">
       <img
         className="absolute top-0 inset-x-0"
         src="/img/shape.png"

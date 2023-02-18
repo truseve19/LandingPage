@@ -25,7 +25,7 @@ function Trusted() {
   return (
     <section className="bg-light">
       <h2 className="theme-h2">
-        Trusted by  Enterprises
+        Trusted by Enterprises
       </h2>
 
       <div className="grid grid-cols-3 justify-center gap-4 sm:gap-12 mdb:gap-16 lg:gap-24 text-center sm:w-fit sm:mx-auto my-8 md:my-14 lg:my-20">

@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply font-monserret overflow-x-hidden;
+    @apply font-monserret;
   }
 
   
@@ -95,7 +95,7 @@ nav {
   @apply 
     lg:-mb-2 
     animate-enter-opacity 
-    items-start flex-wrap gap-2 sm:gap-6 md:gap-8 lg:gap-10 
+    flex items-start flex-wrap gap-2 sm:gap-6 md:gap-8 lg:gap-10 
     fixed lg:static inset-x-0 top-[65px] 
     max-lg:h-[calc(100vh-4rem)] 
     max-sm:p-4 max-lg:p-6 
