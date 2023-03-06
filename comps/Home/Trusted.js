@@ -1,4 +1,7 @@
+import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
+
+const animation = { duration: 10000, easing: t => t }
 
 const data = [
   {
@@ -21,7 +24,137 @@ const data = [
   },
 ]
 
+const sliderImgs = [
+  {
+    key: "1",
+    alt: "",
+    src: "/img/customers/BuzzArk.png",
+    width: 110,
+    height: 78,
+  },
+  {
+    key: "2",
+    alt: "",
+    src: "/img/customers/sanvir.png",
+    width: 97,
+    height: 78,
+  },
+  {
+    key: "3",
+    alt: "",
+    src: "/img/customers/rediff.png",
+    width: 149,
+    height: 40,
+  },
+  {
+    key: "4",
+    alt: "",
+    src: "/img/customers/Bharath-University.png",
+    width: 95,
+    height: 97,
+  },
+  {
+    key: "5",
+    alt: "",
+    src: "/img/customers/srm.png",
+    width: 132,
+    height: 45,
+  },
+  {
+    key: "6",
+    alt: "",
+    src: "/img/customers/escon.png",
+    width: 112,
+    height: 48,
+  },
+  {
+    key: "7",
+    alt: "",
+    src: "/img/customers/tn-electricity.png",
+    width: 134,
+    height: 80,
+  },
+  {
+    key: "8",
+    alt: "",
+    src: "/img/customers/bannari.png",
+    width: 192,
+    height: 35,
+  },
+  {
+    key: "9",
+    alt: "",
+    src: "/img/customers/kc-high.png",
+    width: 57,
+    height: 86,
+  },
+  {
+    key: "10",
+    alt: "",
+    src: "/img/customers/agraga.png",
+    width: 118,
+    height: 69,
+  },
+  {
+    key: "11",
+    alt: "",
+    src: "/img/customers/Easwari-Eng.png",
+    width: 99,
+    height: 99,
+  },
+]
+
 function Trusted() {
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    renderMode: "performance",
+    drag: false,
+    slides: {
+      perView: 2
+    },
+    breakpoints: {
+      "(min-width: 450px)": {
+        slides: {
+          perView: 3
+        },
+      },
+      "(min-width: 640px)": {
+        slides: {
+          perView: 4
+        },
+      },
+      "(min-width: 768px)": {
+        slides: {
+          perView: 5
+        },
+      },
+      "(min-width: 900px)": {
+        slides: {
+          perView: 6
+        },
+      },
+      "(min-width: 1024px)": {
+        slides: {
+          perView: 7
+        },
+      },
+      "(min-width: 1280px)": {
+        slides: {
+          perView: 8
+        },
+      },
+    },
+    created(s) {
+      s.moveToIdx(5, true, animation)
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation)
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation)
+    },
+  })
+
   return (
     <section className="bg-light">
       <h2 className="theme-h2">
@@ -46,43 +179,16 @@ function Trusted() {
         }
       </div>
 
-      <div className="grid grid-cols-6 items-center justify-items-center gap-4 lg:max-w-5xl mx-auto">
-        <Image
-          src="/img/trusted/BuzzArk.png"
-          alt=""
-          width={125}
-          height={90}
-        />
-        <Image
-          src="/img/trusted/Easwari-Eng-clg.png"
-          alt=""
-          width={100}
-          height={100}
-        />
-        <Image
-          src="/img/trusted/Rediff.png"
-          alt=""
-          width={150}
-          height={40}
-        />
-        <Image
-          src="/img/trusted/BuzzArk.png"
-          alt=""
-          width={125}
-          height={90}
-        />
-        <Image
-          src="/img/trusted/Easwari-Eng-clg.png"
-          alt=""
-          width={100}
-          height={100}
-        />
-        <Image
-          src="/img/trusted/Rediff.png"
-          alt=""
-          width={150}
-          height={40}
-        />
+      <div className="-mx-4 lg:-mx-6">
+        <div ref={sliderRef} className="keen-slider">
+          {
+            sliderImgs.map(s => (
+              <div key={s.key} className="keen-slider__slide df justify-center">
+                <Image {...s} />
+              </div>
+            ))
+          }
+        </div>
       </div>
     </section>
   )

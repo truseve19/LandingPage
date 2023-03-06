@@ -21,7 +21,7 @@ function ApplicationForm() {
         Just fill out the form and we will be in touch with you <br /> as soon as possible!
       </div>
 
-      <form className="max-w-sm md:max-w-md mx-auto mb-16 p-8 text-sm md:text-base bg-[#FAFBFC] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-2xl relative">
+      <form className=" max-w-xs md:max-w-md mx-auto mb-16 p-8 text-sm md:text-base bg-[#FAFBFC] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-2xl relative">
         <Cloud className="max-sm:hidden absolute top-8 -right-40 -z-10 fill-[#5482F9DE]" />
         <Cloud className="max-sm:hidden absolute top-20 -left-40 -z-10 fill-[#5482F9DE]" />
         <label className="block mb-2 text-[#837F7F]" htmlFor="">Name</label>

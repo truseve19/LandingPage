@@ -5,6 +5,7 @@ import Services from "./Services";
 import Trusted from "./Trusted";
 import Choose from "./Choose";
 import Header from "./Header";
+import "keen-slider/keen-slider.min.css";
 
 function Home() {
   return (
