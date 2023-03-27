@@ -5,7 +5,7 @@ function Services() {
     <section className="bg-primary text-white relative overflow-x-hidden">
       <img
         className="absolute top-0 inset-x-0"
-        src="/img/shape.png"
+        src="/img/home/shape.png"
         alt=""
       />
 
@@ -16,7 +16,7 @@ function Services() {
       <div className="service-grid grid gap-4 sm:gap-6 w-fit mx-auto p-6 sm:p-12 rounded-2xl md:rounded-[35px] border border-[#98F9FF]">
         <div className="dc p-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/google-workspace.webp"
+            src="/img/home/service/google-workspace.webp"
             alt=""
             width={130}
             height={82}
@@ -25,7 +25,7 @@ function Services() {
 
         <div className="dc p-2 col-span-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/microsoft.webp"
+            src="/img/home/service/microsoft.webp"
             alt=""
             width={300}
             height={125}
@@ -34,7 +34,7 @@ function Services() {
 
         <div className="dc p-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/aws.webp"
+            src="/img/home/service/aws.webp"
             alt=""
             width={90}
             height={54}
@@ -44,7 +44,7 @@ function Services() {
 
         <div className="flex xs:flex-col justify-between items-center gap-2 xs:gap-6 py-2 px-4 xs:py-6 xl:py-12 max-xs:col-span-3 xs:row-span-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/hp.webp"
+            src="/img/home/service/hp.webp"
             alt=""
             width={100}
             height={100}
@@ -52,7 +52,7 @@ function Services() {
           />
 
           <Image
-            src="/img/service/dell.webp"
+            src="/img/home/service/dell.webp"
             alt=""
             width={100}
             height={100}
@@ -60,7 +60,7 @@ function Services() {
           />
 
           <Image
-            src="/img/service/apple.webp"
+            src="/img/home/service/apple.webp"
             alt=""
             width={42}
             height={42}
@@ -70,7 +70,7 @@ function Services() {
 
         <div className="dc p-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/matlab.webp"
+            src="/img/home/service/matlab.webp"
             alt=""
             width={186}
             height={136}
@@ -79,7 +79,7 @@ function Services() {
 
         <div className="dc p-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/Googlecloud.webp"
+            src="/img/home/service/Googlecloud.webp"
             alt=""
             width={160}
             height={160}
@@ -88,7 +88,7 @@ function Services() {
 
         <div className="dc xs:hidden p-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/azure.webp"
+            src="/img/home/service/azure.webp"
             alt=""
             width={260}
             height={40}
@@ -97,7 +97,7 @@ function Services() {
 
         <div className="dc p-2 col-span-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/service/Freshworks.webp"
+            src="/img/home/service/Freshworks.webp"
             alt=""
             width={260}
             height={40}

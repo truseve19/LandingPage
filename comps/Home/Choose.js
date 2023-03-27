@@ -3,37 +3,37 @@ import Image from "next/image";
 const data = [
   {
     id: "1",
-    img: "/img/choose/Billing.png",
+    img: "/img/home/choose/Billing.png",
     title: "Billing Flexibility",
     desc: "We provide multiple modes of payment with easy flexible plans that suit you and your company.",
   },
   {
     id: "2",
-    img: "/img/choose/fullday.png",
+    img: "/img/home/choose/fullday.png",
     title: "24x7 Technical support",
     desc: "We're here for you, around the clock, for all your support needs. From answering basic questions to on-demand premises support, we've got you covered, 24/7.",
   },
   {
     id: "3",
-    img: "/img/choose/microsoft.png",
+    img: "/img/home/choose/microsoft.png",
     title: "Trusted microsoft partner",
     desc: "With us as your trusted Microsoft and Google Partner, migration is a hassle-free process. We ensure your business gets the most out of the productivity tools and applications.",
   },
   {
     id: "4",
-    img: "/img/choose/migration.png",
+    img: "/img/home/choose/migration.png",
     title: "Seamless Migration",
     desc: "We understand the importance of data when switching to Microsoft 365 or Google Workspace, that's why our migration experts are here to ensure a seamless transition without any disruptions.",
   },
   {
     id: "5",
-    img: "/img/choose/multiple.png",
+    img: "/img/home/choose/multiple.png",
     title: "Multiple Payment Options",
     desc: "We offer a variety of payment options to suit your needs when you purchase any subscription from us so that you can choose the one that works best for you.",
   },
   {
     id: "6",
-    img: "/img/choose/setup.png",
+    img: "/img/home/choose/setup.png",
     title: "Setup and deployment support",
     desc: "You can leave the setup and configuration to our experts, they will tailor your infrastructure to your needs, making the transition process faster and more efficient.",
   },
@@ -47,14 +47,14 @@ function Choose() {
         className="max-sm:w-24 blur-[2px] absolute -top-8 -right-6 z-[1]"
         height={110}
         width={110}
-        src="/img/single.png"
+        src="/img/home/single.png"
         alt=""
       />
       <Image
         className="blur-sm absolute bottom-0 left-0 z-[1]"
         height={80}
         width={80}
-        src="/img/single.png"
+        src="/img/home/single.png"
         alt=""
       />
 
@@ -97,7 +97,7 @@ function Choose() {
           className="blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"
           height={250}
           width={250}
-          src="/img/center.png"
+          src="/img/home/center.png"
           alt=""
         />
       </div>

@@ -13,7 +13,7 @@ function ConnectUs({ isOpen, closeModal }) {
           <Image
             height={32}
             width={32}
-            src="/img/thunder.webp"
+            src="/img/home/thunder.webp"
             alt=""
             className="rotate-12 scale-[1.2] -ml-3"
           />

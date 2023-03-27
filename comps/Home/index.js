@@ -1,5 +1,5 @@
 import ApplicationForm from "./ApplicationForm";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import Migration from "./Migration";
 import Services from "./Services";
 import Trusted from "./Trusted";
@@ -15,7 +15,7 @@ function Home() {
       <Services />
       <Choose />
       <Migration />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <ApplicationForm />
     </>
   )

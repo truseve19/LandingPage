@@ -4,23 +4,18 @@ import useObserver from "../../hooks/useObserver";
 const data = [
   {
     id: 1,
-    title: "CUT OVER MIGRATION",
-    desc: "We seamlessly transfer all your data, email accounts and features,  whether they are on-site or in the cloud, to Office 365 all at once. This method is perfect for businesses with limited amount of data to migrate.",
+    title: "Email Migration",
+    desc: "Email migration made hassle-free by providing expert services that ensure seamless transfer of email data between platforms. Our team guarantees a smooth transition with minimum downtime, making it stress-free for both individuals and businesses.",
   },
   {
     id: 2,
-    title: "STAGED MIGRATION",
-    desc: "To ensure a smooth transition, we divide the migration process into multiple phases, moving solutions and their associated data in manageable chunks. This method is ideal for businesses with large amounts of complex data, custom solutions, integrations, and diverse content and features.",
+    title: "Cloud Migration",
+    desc: "Truseve offers customized cloud migration services for seamless transition to cloud environment, including data and application migration, and optimizing performance, security, and scalability.",
   },
   {
     id: 3,
-    title: "HYBRID MIGRATION",
-    desc: "We divide the migrated data and services between your on-site and cloud systems, making it easy to work in both environments. This hybrid approach is perfect for companies that are not ready to fully move to the cloud due to compliance or internal policies.",
-  },
-  {
-    id: 4,
-    title: "DirSync and Single Sign ON (SSO)",
-    desc: "We move all your data to the cloud while keeping your Active Directories on-site, this migration method enables businesses to take advantage of cloud collaboration while maintaining full control over their Office 365 users.",
+    title: "On-Premises to Cloud Migration",
+    desc: "Are you tired of managing your on-premises software? Truseve can help you migrate to a cloud-based platform seamlessly. Our expert team ensures a hassle-free transition.",
   },
 ]
 
@@ -44,7 +39,7 @@ function Migration() {
 
   useEffect(() => {
     if (progress >= 8000) {
-      setActive(p => p < 4 ? p + 1 : 1)
+      setActive(p => p < 3 ? p + 1 : 1)
     }
   }, [progress])
 

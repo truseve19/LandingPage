@@ -14,10 +14,10 @@ function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="df gap-6 px-4 xs:px-6 py-4">
+    <nav className="df gap-6 px-4 xs:px-6 py-2">
       <img
-        className="mr-auto h-12"
-        src="/truseve.png"
+        className="mr-auto h-16"
+        src="/truseve-logo.png"
         alt="Truseve logo"
       />
 

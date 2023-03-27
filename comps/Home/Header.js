@@ -50,14 +50,14 @@ function Header() {
           </p>
 
           <ConnectUsBtn
-            txt={<>Let’s Connect <img className="w-7" src="/img/hand.webp" alt="" /> </>}
+            txt={<>Let’s Connect <img className="w-7" src="/img/home/hand.webp" alt="" /> </>}
             className="df mx-auto sm:mx-0 px-6 py-2 text-xs md:text-sm xl:text-base"
           />
         </div>
 
         <div className="max-sm:hidden">
           <Image
-            src="/img/header.webp"
+            src="/img/home/header.png"
             alt=""
             width={380}
             height={320}

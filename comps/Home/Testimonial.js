@@ -79,7 +79,7 @@ function Card({ comment, from, role, name }) {
         <Image
           height={48}
           width={48}
-          src="/img/profile.png"
+          src="/img/home/profile.png"
           alt=""
           className="w-6 md:w-8 xl:w-12"
         />
