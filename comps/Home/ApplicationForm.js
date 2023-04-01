@@ -8,10 +8,10 @@ function ApplicationForm() {
 
       <Circle className="absolute top-1/2 left-0 z-[1]" />
       <Circle className="absolute top-20 right-0 z-[1]" />
-      <Cloud className="max-sm:scale-75 absolute bottom-8 right-0 fill-[#FFFFFF21]" />
-      <Cloud className="max-sm:hidden absolute top-1/2 right-20 fill-[#FFFFFF21]" />
-      <Cloud className="absolute bottom-32 left-60 fill-[#FFFFFF26]" />
-      <Cloud className="max-sm:scale-75 absolute bottom-8 left-0 fill-[#FFFFFF26]" />
+      <Cloud className="w-[173px] h-20 max-sm:scale-75 absolute bottom-8 right-0 fill-[#FFFFFF21]" />
+      <Cloud className="w-[173px] h-20 max-sm:hidden absolute top-1/2 right-20 fill-[#FFFFFF21]" />
+      <Cloud className="w-[173px] h-20  max-sm:hidden absolute bottom-32 left-60 fill-[#FFFFFF26]" />
+      <Cloud className="w-[173px] h-20 max-sm:scale-75 absolute bottom-8 left-0 fill-[#FFFFFF26]" />
 
       <h2 className="theme-h2 mb-2 font-semibold text-[#030E36]">
         Contact our Team

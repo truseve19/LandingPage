@@ -57,7 +57,7 @@ function Header() {
 
         <div className="max-sm:hidden">
           <Image
-            src="/img/home/header.png"
+            src="/img/home/home-header.png"
             alt=""
             width={380}
             height={320}

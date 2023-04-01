@@ -5,7 +5,7 @@ const data = [
     id: "1",
     img: "/img/home/choose/Billing.png",
     title: "Billing Flexibility",
-    desc: "We provide multiple modes of payment with easy flexible plans that suit you and your company.",
+    desc: "We provide multiple modes of payment with easy flexible plans that suits your company’s specific needs and preferences.",
   },
   {
     id: "2",
@@ -27,9 +27,9 @@ const data = [
   },
   {
     id: "5",
-    img: "/img/home/choose/multiple.png",
-    title: "Multiple Payment Options",
-    desc: "We offer a variety of payment options to suit your needs when you purchase any subscription from us so that you can choose the one that works best for you.",
+    img: "/img/home/choose/customised.png",
+    title: "Customized Infrastructure",
+    desc: "Based on the services that your company needs, our experienced specialists customise and design a sustainable technology infrastructure.",
   },
   {
     id: "6",
@@ -62,10 +62,6 @@ function Choose() {
         <h2 className="theme-h2 mb-2 text-[#202020]">
           Why choose truseve for your IT solutions
         </h2>
-
-        <p className="text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-center text-[#494949]">
-          Get your subscription at a discounted price up to 15% off!
-        </p>
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-6xl xl:max-w-7xl mx-auto relative">

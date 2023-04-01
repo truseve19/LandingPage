@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import useObserver from "../../hooks/useObserver";
+import Image from "next/image";
 
 const data = [
   {
@@ -61,7 +62,15 @@ function Migration() {
       </div>
 
       <div className="grid mdb:grid-cols-2 gap-6 px-5 py-8 max-w-lg md:max-w-2xl mdb:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-white rounded-3xl">
-        <div className="migration-bg max-mdb:h-40 mdb:order-1 mdb:rounded-r-2xl"></div>
+        <div className="dc migration-bg p-4 sm:p-12 max-mdb:h-80 mdb:order-1 mdb:rounded-r-2xl">
+          <Image
+            src="/img/home/migration.png"
+            alt=""
+            width={600}
+            height={416}
+            className="w-[440px] h-[300px] lg:w-[600px] lg:h-[416px]"
+          />
+        </div>
 
         <div className="grid gap-4" ref={observerRef}>
           {

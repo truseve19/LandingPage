@@ -108,7 +108,7 @@ nav {
 .nav-products {
   @apply 
     lg:animate-enter-opacity 
-    absolute top-[70px] max-sm:inset-x-4 max-lg:inset-x-6 lg:top-12 lg:left-1/2 lg:-translate-x-1/2 
+    absolute top-[70px] max-sm:inset-x-4 max-lg:inset-x-6 lg:top-[60px] xl:top-16 lg:left-1/2 lg:-translate-x-1/2 
     sm:grid sm:grid-cols-3 lg:hidden group-hover:lg:grid 
     lg:grid-cols-[repeat(6,160px)] xl:grid-cols-[repeat(6,180px)] 2xl:grid-cols-[repeat(6,200px)]
     lg:p-6 lg:rounded-xl lg:shadow-md

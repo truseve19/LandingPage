@@ -46,7 +46,7 @@ const links = [
     list: [
       "D-link",
       "TP-link",
-      "Biquiti",
+      "Ubiquiti",
       "Aruba",
       "Juniper",
       "Ruckus",
