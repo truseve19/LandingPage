@@ -62,13 +62,19 @@ function Migration() {
       </div>
 
       <div className="grid mdb:grid-cols-2 gap-6 px-5 py-8 max-w-lg md:max-w-2xl mdb:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-white rounded-3xl">
-        <div className="dc migration-bg p-4 sm:p-12 max-mdb:h-80 mdb:order-1 mdb:rounded-r-2xl">
+        <div className="dc p-4 sm:p-12 max-mdb:h-80 mdb:order-1 mdb:rounded-r-2xl relative">
           <Image
             src="/img/home/migration.png"
             alt=""
             width={600}
             height={416}
-            className="w-[440px] h-[300px] lg:w-[600px] lg:h-[416px]"
+            className="w-[440px] h-[300px] lg:w-[600px] lg:h-[416px] z-[1]"
+          />
+
+          <img
+            src="./img/home/migration.webp"
+            alt=""
+            className="absolute inset-0 w-full h-full"
           />
         </div>
 

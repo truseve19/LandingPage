@@ -146,10 +146,6 @@ nav {
   animation: progress 8s linear;
 }
 
-.migration-bg {
-  background: url(../public/img/home/migration.webp) no-repeat center/cover;
-}
-
 @keyframes progress {
   0% {
     width: 0;
