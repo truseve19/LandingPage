@@ -135,10 +135,6 @@ nav {
   background: linear-gradient(184.33deg, rgba(83, 105, 252, 0.34) -50%, rgba(97, 147, 251, 0.11) 40%, rgba(104, 168, 250, 0) 60%);
 }
 
-.migration-bg {
-  background: url(../public/img/home/migration.webp) no-repeat center/cover;
-}
-
 .contact-form-divider-bg {
   clip-path: polygon(0 72%, 100% 37%, 100% 99%, 0% 100%);
   background: linear-gradient(170deg, #3B54F7 14.64%, #4566F7 29.01%, #5F97F9 80.07%, #68A8FA 93.47%);
@@ -148,6 +144,10 @@ nav {
   @apply h-1.5 w-full absolute bottom-0 left-0 bg-primary;
   content: "";
   animation: progress 8s linear;
+}
+
+.migration-bg {
+  background: url(../public/img/home/migration.webp) no-repeat center/cover;
 }
 
 @keyframes progress {
