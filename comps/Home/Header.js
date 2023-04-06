@@ -21,8 +21,8 @@ function Header() {
     let id = null
     if (text === current) {
       setCurrent(p => {
-        if (p === "infrastructure") return "Operations"
-        if (p === "Operations") return "solutions"
+        if (p === "infrastructure") return "operations"
+        if (p === "operations") return "solutions"
         return "infrastructure"
       })
 
