@@ -82,6 +82,14 @@
   .theme-h2 {
     @apply text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-center;
   }
+
+  .accordion-wrapper {
+    @apply transition-colors duration-300;    
+  }
+
+  .accordion-panel {
+    @apply overflow-hidden transition-[height] duration-200;
+  }
 }
 
 nav {

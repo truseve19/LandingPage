@@ -59,8 +59,12 @@ function Nav() {
                   </strong>
 
                   {l.list.map(a => (
-                    <Link href="/" key={a} className="df px-1 py-0.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink">
-                      {a}
+                    <Link
+                      key={a.title}
+                      href={a.to}
+                      className="df px-1 py-0.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink"
+                    >
+                      {a.title}
                       <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block" />
                     </Link>
                   ))}

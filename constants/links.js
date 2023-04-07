@@ -2,83 +2,239 @@ const links = [
   {
     title: "Software",
     list: [
-      "Microsoft",
-      "Adobe",
-      "Coral",
-      "Autocad",
-      "MatLab",
-      "Sketchup",
-      "Ansys",
-      "Catia & Solidworks",
-      "Labview",
+      {
+        to: "/microsoft",
+        title: "Microsoft"
+      },
+      {
+        to: "/",
+        title: "Adobe"
+      },
+      {
+        to: "/",
+        title: "Coral"
+      },
+      {
+        to: "/",
+        title: "Autocad"
+      },
+      {
+        to: "/",
+        title: "MatLab"
+      },
+      {
+        to: "/",
+        title: "Sketchup"
+      },
+      {
+        to: "/",
+        title: "Ansys"
+      },
+      {
+        to: "/",
+        title: "Catia & Solidworks"
+      },
+      {
+        to: "/",
+        title: "Labview"
+      },
     ]
   },
   {
     title: "Hardware",
     list: [
-      "Apple",
-      "HP",
-      "Dell",
-      "Lenovo",
-      "IBM",
-      "Acer",
-      "Sony",
-      "LG",
-      "MSI",
+      {
+        to: "/",
+        title: "Apple"
+      },
+      {
+        to: "/",
+        title: "HP"
+      },
+      {
+        to: "/",
+        title: "Dell"
+      },
+      {
+        to: "/",
+        title: "Lenovo"
+      },
+      {
+        to: "/",
+        title: "IBM"
+      },
+      {
+        to: "/",
+        title: "Acer"
+      },
+      {
+        to: "/",
+        title: "Sony"
+      },
+      {
+        to: "/",
+        title: "LG"
+      },
+      {
+        to: "/",
+        title: "MSI"
+      },
     ]
   },
   {
     title: "Storage & data center",
     list: [
-      "HP",
-      "EMC",
-      "Dell",
-      "SanDisk",
-      "Western Digital",
-      "Seagate",
-      "Samsung",
-      "IBM",
-      "Lenovo",
+      {
+        to: "/",
+        title: "HP"
+      },
+      {
+        to: "/",
+        title: "EMC"
+      },
+      {
+        to: "/",
+        title: "Dell"
+      },
+      {
+        to: "/",
+        title: "SanDisk"
+      },
+      {
+        to: "/",
+        title: "Western Digital"
+      },
+      {
+        to: "/",
+        title: "Seagate"
+      },
+      {
+        to: "/",
+        title: "Samsung"
+      },
+      {
+        to: "/",
+        title: "IBM"
+      },
+      {
+        to: "/",
+        title: "Lenovo"
+      },
     ]
   },
   {
     title: "Networking",
     list: [
-      "D-link",
-      "TP-link",
-      "Ubiquiti",
-      "Aruba",
-      "Juniper",
-      "Ruckus",
-      "Cisco",
-      "HP",
-      "Netgear",
+      {
+        to: "/",
+        title: "D-link"
+      },
+      {
+        to: "/",
+        title: "TP-link"
+      },
+      {
+        to: "/",
+        title: "Ubiquiti"
+      },
+      {
+        to: "/",
+        title: "Aruba"
+      },
+      {
+        to: "/",
+        title: "Juniper"
+      },
+      {
+        to: "/",
+        title: "Ruckus"
+      },
+      {
+        to: "/",
+        title: "Cisco"
+      },
+      {
+        to: "/",
+        title: "HP"
+      },
+      {
+        to: "/",
+        title: "Netgear"
+      },
     ]
   },
   {
     title: "Security",
     list: [
-      "Barracuda",
-      "Cisco",
-      "Fortinet",
-      "Sophos",
-      "Paloatto",
-      "Checkpoint",
-      "McAfee",
-      "Kaspersky",
+      {
+        to: "/",
+        title: "Barracuda"
+      },
+      {
+        to: "/",
+        title: "Cisco"
+      },
+      {
+        to: "/",
+        title: "Fortinet"
+      },
+      {
+        to: "/",
+        title: "Sophos"
+      },
+      {
+        to: "/",
+        title: "Paloatto"
+      },
+      {
+        to: "/",
+        title: "Checkpoint"
+      },
+      {
+        to: "/",
+        title: "McAfee"
+      },
+      {
+        to: "/",
+        title: "Kaspersky"
+      },
     ]
   },
   {
     title: "Other products",
     list: [
-      "Video conferencing kits",
-      "AR & VR Headsets",
-      "CCTV Camera",
-      "Biometric Devices",
-      "Drones",
-      "Barcode scanner & Printers",
-      "Interactive panels & TVs",
-      "Projectors",
+      {
+        to: "/",
+        title: "Video conferencing kits"
+      },
+      {
+        to: "/",
+        title: "AR & VR Headsets"
+      },
+      {
+        to: "/",
+        title: "CCTV Camera"
+      },
+      {
+        to: "/",
+        title: "Biometric Devices"
+      },
+      {
+        to: "/",
+        title: "Drones"
+      },
+      {
+        to: "/",
+        title: "Barcode scanner & Printers"
+      },
+      {
+        to: "/",
+        title: "Interactive panels & TVs"
+      },
+      {
+        to: "/",
+        title: "Projectors"
+      },
     ]
   },
 ]
