@@ -29,11 +29,11 @@ const data = [
 function Card({ title, para }) {
   return (
     <div className="max-w-sm p-6 bg-white rounded-[18px]">
-      <div className="mb-2 text-[22px] font-semibold text-[#202020]">
+      <div className="mb-2 text-lg md:text-xl xl:text-[22px] font-semibold text-[#202020]">
         {title}
       </div>
 
-      <div className="text-lg">
+      <div className="text-sm md:text-base xl:text-lg">
         {para}
       </div>
     </div>
@@ -42,12 +42,12 @@ function Card({ title, para }) {
 
 function Reason() {
   return (
-    <div className="p-8 pb-16 bg-light">
-      <h2 className="mb-6 text-[38px] font-bold text-[#202020] text-center">
+    <div className="p-8 pt-12 bg-light">
+      <h2 className="text-2xl md:text-3xl xl:text-[38px] font-bold text-[#202020] text-center">
         Reasons to buy Microsoft 365 from Truseve
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-x-14 gap-y-24 my-8">
+      <div className="flex flex-wrap justify-center gap-x-14 gap-y-8 mdb:gap-y-16 xl:gap-y-20 my-8 mdb:mt-12">
         {data.map(d => <Card {...d} />)}
       </div>
     </div>

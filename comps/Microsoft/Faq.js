@@ -47,14 +47,14 @@ function Card({ quest, ans, isActive, height, onClk }) {
   }
 
   return (
-    <div className={`accordion-wrapper p-6 mb-6 bg-white rounded-[10px] ${isActive ? "open" : ""}`}>
+    <div className={`accordion-wrapper p-4 sm:p-6 mb-6 bg-white rounded-[10px] text-[13px] md:text-sm xl:text-base ${isActive ? "open" : ""}`}>
       <button
-        className={`df not-theme w-full transition-all ${isActive ? "text-lg font-semibold" : ""}`}
+        className={`df not-theme w-full transition-all text-left ${isActive ? "text-sm md:text-base xl:text-lg font-semibold" : ""}`}
         onClick={onClick}
       >
-        <span className={`w-4 h-4 rounded-full transition-colors ${isActive ? "bg-[#5D5FEF]" : "bg-[#5D5FEF66]"}`}></span>
+        <span className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-colors shrink-0 ${isActive ? "bg-[#5D5FEF]" : "bg-[#5D5FEF66]"}`}></span>
         {quest}
-        <Arrow className={`w-5 h-5 ml-auto stroke-[#5D5FEF] transition-transform ${isActive ? "rotate-180" : ""}`} />
+        <Arrow className={`w-4 h-4 md:w-5 md:h-5 shrink-0 ml-auto stroke-[#5D5FEF] transition-transform ${isActive ? "rotate-180" : ""}`} />
       </button>
 
       <div
@@ -80,7 +80,7 @@ function Faq() {
 
   return (
     <div className='p-12 bg-light'>
-      <h2 className="mb-6 text-[38px] font-bold text-[#202020] text-center">
+      <h2 className="mb-6 text-2xl md:text-3xl xl:text-[38px] font-bold text-[#202020] text-center">
         Microsoft 365 FAQ’s
       </h2>
 

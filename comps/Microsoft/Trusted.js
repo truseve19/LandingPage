@@ -7,6 +7,7 @@ const sliderImgs = [
     src: "/img/home/customers/rediff.png",
     width: 149,
     height: 40,
+    className: "hidden mdb:block",
   },
   {
     key: "2",
@@ -35,13 +36,14 @@ const sliderImgs = [
     src: "/img/home/customers/Easwari-Eng.png",
     width: 99,
     height: 99,
+    className: "hidden mdb:block",
   },
 ]
 
 function Trusted() {
   return (
     <div className="p-8 bg-light">
-      <div className="grid grid-cols-5 items-center justify-items-center max-w-7xl mx-auto">
+      <div className="grid grid-cols-3 mdb:grid-cols-5 items-center justify-items-center gap-4 max-w-7xl mx-auto">
         {sliderImgs.map(s => <Image {...s} />)}
       </div>
     </div>
