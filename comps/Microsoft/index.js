@@ -1,4 +1,5 @@
 import Trusted from "./Trusted";
+import Service from "./Service";
 import Reason from "./Reason";
 import Header from "./Header";
 import Plans from "./Plans";
@@ -9,6 +10,7 @@ function Microsoft() {
     <>
       <Header />
       <Plans />
+      <Service />
       <Reason />
       <Trusted />
       <Faq />
