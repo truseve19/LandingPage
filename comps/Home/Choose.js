@@ -16,8 +16,8 @@ const data = [
   {
     id: "3",
     img: "/img/home/choose/microsoft.png",
-    title: "Trusted microsoft partner",
-    desc: "With us as your trusted Microsoft and Google Partner, migration is a hassle-free process. We ensure your business gets the most out of the productivity tools and applications.",
+    title: "Trusted partner",
+    desc: "We are a trusted partner to many high-level companies, providing comprehensive software and hardware solutions to businesses of all sizes.",
   },
   {
     id: "4",
@@ -28,8 +28,8 @@ const data = [
   {
     id: "5",
     img: "/img/home/choose/customised.png",
-    title: "Customized Infrastructure",
-    desc: "Based on the services that your company needs, our experienced specialists customise and design a sustainable technology infrastructure.",
+    title: "Affordable Hardware Solutions",
+    desc: "From startups to enterprises, we offer comprehensive hardware services that cover everything like desktop, laptop, servers and also support server management and data backup.",
   },
   {
     id: "6",

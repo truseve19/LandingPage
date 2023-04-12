@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useRouter } from 'next/router';
 import { usermavenClient } from "@usermaven/sdk-js";
 import Script from 'next/script';
+import Head from "next/head";
 
 import Footer from '../comps/Layout/Footer';
 import Nav from '../comps/Layout/Nav';
@@ -31,6 +32,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>Truseve</title>
+      </Head>
+
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6F8YREHTSD"
         onLoad={() => {

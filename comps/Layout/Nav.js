@@ -15,11 +15,13 @@ function Nav() {
 
   return (
     <nav className="df gap-6 px-4 xs:px-6 py-2">
-      <img
-        className="mr-auto h-16"
-        src="/truseve-logo.png"
-        alt="Truseve logo"
-      />
+      <Link href="/" className="mr-auto">
+        <img
+          className="h-16"
+          src="/truseve-logo.png"
+          alt="Truseve logo"
+        />
+      </Link>
 
       <div className="lg:hidden">
         <button

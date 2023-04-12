@@ -5,47 +5,47 @@ const middle = "left-1/2 -translate-x-1/2 whitespace-nowrap"
 const list = [
   {
     title: "Office Applications",
-    wrapperCls: "px-20",
+    wrapperCls: "w-full",
     titleClass: "right-8",
     list: [
       {
-        src: "/img/microsoft/service/Word.png",
+        src: "/img/microsoft/services/Word.png",
         alt: "Word",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/Excel.png",
+        src: "/img/microsoft/services/Excel.png",
         alt: "Excel",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/Powerpoint.png",
+        src: "/img/microsoft/services/Powerpoint.png",
         alt: "Powerpoint",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/outlook.png",
+        src: "/img/microsoft/services/Outlook.png",
         alt: "Outlook",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/Access.png",
+        src: "/img/microsoft/services/Access.png",
         alt: "Access",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/onenote.png",
+        src: "/img/microsoft/services/Onenote.png",
         alt: "OneNote",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/Publisher.png",
+        src: "/img/microsoft/services/Publisher.png",
         alt: "Publisher",
         width: 88,
         height: 88,
@@ -53,126 +53,132 @@ const list = [
     ]
   },
   {
-    title: "Enterprise & Team collaboration",
-    wrapperCls: "px-20",
+    title: <>
+      <p className="xs:hidden">Enterprise & Team</p>
+      <p className="hidden xs:block">Enterprise & Team collaboration</p>
+    </>,
+    wrapperCls: "w-full",
     titleClass: "right-8",
     list: [
       {
-        src: "/img/microsoft/service/sharepoint.png",
+        src: "/img/microsoft/services/Sharepoint.png",
         alt: "Sharepoint",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/Teams.png",
+        src: "/img/microsoft/services/Teams.png",
         alt: "Teams",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/Yammer.png",
+        src: "/img/microsoft/services/Yammer.png",
         alt: "Yammer",
-        width: 74,
-        height: 74,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
-    title: "Business Application Platform",
-    wrapperCls: "px-20",
+    title: <>
+      <p className="xs:hidden">Business Application</p>
+      <p className="hidden xs:block">Business Application Platform</p>
+    </>,
+    wrapperCls: "w-full",
     titleClass: "left-8",
     list: [
       {
-        src: "/img/microsoft/service/powerapp.png",
+        src: "/img/microsoft/services/PowerApps.png",
         alt: "Power Apps",
-        width: 67,
-        height: 67,
+        width: 88,
+        height: 88,
       },
       {
-        src: "/img/microsoft/service/flow.png",
+        src: "/img/microsoft/services/Flow.png",
         alt: "Flow",
         width: 88,
         height: 88,
       },
       {
-        src: "/img/microsoft/service/forms.png",
+        src: "/img/microsoft/services/Forms.png",
         alt: "Forms",
-        width: 77,
-        height: 77,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
     title: "Analytics",
-    wrapperCls: "px-20",
+    wrapperCls: "w-full",
     titleClass: "right-8",
     list: [
       {
-        src: "/img/microsoft/service/MyAnalytics.png",
+        src: "/img/microsoft/services/My-Analytics.png",
         alt: "My Analytics",
-        width: 81,
-        height: 81,
+        width: 88,
+        height: 88,
       },
       {
-        src: "/img/microsoft/service/Power-BI.png",
+        src: "/img/microsoft/services/Power-BI.png",
         alt: "Power of BI",
-        width: 74,
-        height: 74,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
     title: "Email & Calendaring",
-    wrapperCls: "px-20",
-    titleClass: "left-8",
+    wrapperCls: "w-full",
+    titleClass: "left-4 md:left-8 xs:whitespace-nowrap",
     list: [
       {
-        src: "/img/microsoft/service/exchange.png",
+        src: "/img/microsoft/services/Exchange.png",
         alt: "Exchange",
-        width: 79,
-        height: 79,
+        width: 88,
+        height: 88,
       },
       {
-        src: "/img/microsoft/service/Calendar.png",
+        src: "/img/microsoft/services/Calendar.png",
         alt: "Calendar",
-        width: 65,
-        height: 65,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
     title: "Project Mgmt.",
-    wrapperCls: "px-12",
+    wrapperCls: "w-2/4",
     titleClass: middle,
     list: [
       {
-        src: "/img/microsoft/service/Project.png",
+        src: "/img/microsoft/services/Project.png",
         alt: "Project",
-        width: 75,
-        height: 66,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
     title: "Search",
-    wrapperCls: "px-12",
+    wrapperCls: "w-1/4",
     titleClass: middle,
     list: [
       {
-        src: "/img/microsoft/service/Delve.png",
+        src: "/img/microsoft/services/Delver.png",
         alt: "Delve",
-        width: 77,
-        height: 67,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
     title: "File Storage",
-    wrapperCls: "px-12",
+    wrapperCls: "w-1/4",
     titleClass: middle,
     list: [
       {
-        src: "/img/microsoft/service/onedrive.png",
+        src: "/img/microsoft/services/One-Drive.png",
         alt: "OneDrive",
         width: 88,
         height: 88,
@@ -181,27 +187,27 @@ const list = [
   },
   {
     title: "Small Business",
-    wrapperCls: "px-12",
+    wrapperCls: "w-1/4",
     titleClass: middle,
     list: [
       {
-        src: "/img/microsoft/service/Visio.png",
+        src: "/img/microsoft/services/Visio.png",
         alt: "Visio Online",
-        width: 80,
-        height: 76,
+        width: 88,
+        height: 88,
       },
     ]
   },
   {
     title: "Employees",
-    wrapperCls: "px-12",
+    wrapperCls: "w-1/4",
     titleClass: middle,
     list: [
       {
-        src: "/img/microsoft/service/People.png",
+        src: "/img/microsoft/services/People.png",
         alt: "People",
-        width: 69,
-        height: 69,
+        width: 88,
+        height: 88,
       },
     ]
   },
@@ -216,8 +222,8 @@ function Card({
   wrapperCls = "", titleClass = "",
 }) {
   return (
-    <div className={`df justify-around gap-20 w-fit pt-7 pb-2 shadow-[0_4px_18px_0_#5D5FEF8C] rounded-[25px] relative bg-white ${wrapperCls}`}>
-      <div className={`px-7 py-1 absolute top-0 -translate-y-1/2 bg-primary text-white rounded-[5px] ${titleClass}`}>
+    <div className={`df justify-evenly pt-5 sm:pt-7 pb-2 text-[10px] sm:text-xs md:text-[13px] mdb:text-sm xl:text-base shadow-[0_4px_18px_0_#5D5FEF8C] rounded-lg sm:rounded-2xl md:rounded-3xl relative bg-white ${wrapperCls}`}>
+      <div className={`px-1.5 xs:px-2 sm:px-3 md:px-4 mdb:px-5 lg:px-7 py-1 absolute top-0 -translate-y-1/2 bg-primary text-white rounded-sm sm:rounded-[5px] ${titleClass}`}>
         {title}
       </div>
 
@@ -225,9 +231,12 @@ function Card({
         list.map(a => (
           <div
             key={a.key}
-            className="dfc items-center gap-1 mt-auto text-xs md:text-sm xl:text-base font-medium text-[#8B8B8B]"
+            className="dfc items-center gap-1 mt-auto font-medium text-[#8B8B8B]"
           >
-            <Image {...a} />
+            <Image
+              {...a}
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 mdb:w-16 mdb:h-16 lg:w-20 lg:h-20 xl:w-[88px] xl:h-[88px]"
+            />
 
             {a.alt}
           </div>
@@ -249,8 +258,22 @@ function Service() {
         effortless onboarding experience.
       </div>
 
-      <div className="flex flex-wrap justify-center gap-x-8 gap-y-[70px] max-w-[1200px] mx-auto">
-        {list.map(c => <Card {...c} />)}
+      <div className="max-w-[1200px] -mx-4 md:mx-auto">
+        <div className="flex justify-center gap-x-4 md:gap-x-8">
+          <Card {...list[0]} />
+        </div>
+
+        <div className="flex justify-center gap-x-4 md:gap-x-8 xs:max-w-[97%] sm:max-w-[95%] mdb:max-w-[90%] mx-auto my-10 sm:my-14 md:my-16 lg:my-[70px]">
+          {list.filter((a, i) => i > 0 && i < 3).map(a => <Card {...a} />)}
+        </div>
+
+        <div className="flex justify-center gap-x-4 md:gap-x-8 xs:max-w-[90%] sm:max-w-[88%] mdb:max-w-[80%] mx-auto my-10 sm:my-14 md:my-16 lg:my-[70px]">
+          {list.filter((a, i) => i > 2 && i < 6).map(a => <Card {...a} />)}
+        </div>
+
+        <div className="flex justify-center gap-x-4 md:gap-x-8 xs:max-w-[85%] sm:max-w-[80%] mdb:max-w-[70%] mx-auto">
+          {list.filter((a, i) => i > 5).map(a => <Card {...a} />)}
+        </div>
       </div>
     </div>
   )
