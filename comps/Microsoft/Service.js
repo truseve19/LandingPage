@@ -249,12 +249,19 @@ function Card({
 function Service() {
   return (
     <div className="p-8 pt-16 bg-light">
-      <h2 className="mb-4 text-2xl md:text-3xl xl:text-[40px] font-bold text-center">
+      <h2 className="dc gap-4 mb-4 text-2xl md:text-3xl xl:text-[40px] font-bold text-center">
+        <Image
+          src="/img/microsoft/services/Microsoft.png"
+          alt=""
+          width={56}
+          height={56}
+          className="w-8 h-8 md:w-11 md:h-11 xl:w-[54px] xl:h-[54px]"
+        />
         Microsoft 365 Services
       </h2>
 
       <div className="mb-12 text-[13px] md:text-[15px] xl:text-[17px] font-medium text-[#040404] text-center">
-        Our team helps you select the most suitable MS365 plan for your business needs, ensuring a seamless and <br />
+        Our team helps you select the most suitable MS365 plan for your business needs, ensuring a seamless and <br className="hidden md:block" />
         effortless onboarding experience.
       </div>
 
