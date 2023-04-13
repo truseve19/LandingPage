@@ -61,14 +61,14 @@ function Migration() {
         </p>
       </div>
 
-      <div className="grid mdb:grid-cols-2 gap-6 px-5 py-8 max-w-lg md:max-w-2xl mdb:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-white rounded-3xl">
-        <div className="dc p-4 sm:p-12 max-mdb:h-80 mdb:order-1 relative rounded-3xl mdb:rounded-l-none overflow-hidden">
+      <div className="grid mdb:grid-cols-2 gap-6 px-5 py-8 max-w-lg md:max-w-xl mdb:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-white rounded-3xl">
+        <div className="dc p-4 h-60 xs:h-80 md:h-96 mdb:h-auto mdb:order-1 relative rounded-3xl mdb:rounded-l-none overflow-hidden">
           <Image
             src="/img/home/migration-1.png"
             alt=""
-            width={600}
-            height={380}
-            className="w-[400px] h-[280px] lg:w-[600px] lg:h-[380px] z-[1]"
+            width={546}
+            height={375}
+            className="z-[1]"
           />
 
           <img

@@ -128,9 +128,9 @@ function Card({
   return (
     <div className="flex flex-col bg-white">
       <div className="dfc items-center gap-4 p-6 bg-primary text-white rounded-md text-center sticky top-20">
-        <p className="text-[13px] md:text-[15px] xl:text-[17px] font-medium">{title}</p>
-        <p className="text-lg md:text-xl xl:text-2xl font-semibold">{plan}</p>
-        <p className="text-3xl md:text-4xl xl:text-[40px] font-bold">{price}</p>
+        <p className="text-[13px] md:text-[15px] font-medium">{title}</p>
+        <p className="text-lg md:text-xl font-semibold">{plan}</p>
+        <p className="text-3xl md:text-4xl font-bold">{price}</p>
 
         <button className="mt-2 text-[13px] md:text-[15px] xl:text-[17px] font-medium bg-[#001252] text-white shadow-[0_4px_4px_0_#00000040]">
           Order Now

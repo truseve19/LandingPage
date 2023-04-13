@@ -92,7 +92,7 @@ function Nav() {
 
         <ConnectUsBtn
           txt="Request Quote"
-          className="shrink-0 max-xs:absolute max-xs:bottom-4"
+          className="hidden min-[490px]:block shrink-0 max-xs:absolute max-xs:bottom-4"
         />
       </div>
     </nav>
