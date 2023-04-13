@@ -117,8 +117,9 @@ nav {
   @apply 
     lg:animate-enter-opacity 
     absolute top-[70px] max-sm:inset-x-4 max-lg:inset-x-6 lg:top-[60px] xl:top-16 lg:left-1/2 lg:-translate-x-1/2 
-    sm:grid sm:grid-cols-3 lg:hidden group-hover:lg:grid 
-    lg:grid-cols-[repeat(6,160px)] xl:grid-cols-[repeat(6,180px)] 2xl:grid-cols-[repeat(6,200px)]
+    min-[360px]:grid min-[360px]:grid-cols-2 sm:grid-cols-3
+    md:grid-cols-4 lg:hidden group-hover:lg:grid 
+    lg:grid-cols-[repeat(4,180px)] xl:grid-cols-[repeat(4,210px)]
     lg:p-6 lg:rounded-xl lg:shadow-md
     lg:bg-[#F9F9F9] 
   ;

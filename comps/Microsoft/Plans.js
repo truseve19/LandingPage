@@ -74,7 +74,7 @@ const forBuisness = [
     key: "1",
     title: "Microsoft 365",
     plan: "Business Basic",
-    price: "₹ 111/mo.",
+    price: "₹ 115/mo.",
     intro: "Web and mobile apps and services",
     covered: covered.filter((a, i) => i < 8),
     points: [
@@ -89,8 +89,8 @@ const forBuisness = [
   {
     key: "2",
     title: "Microsoft 365",
-    plan: "Business Basic",
-    price: "₹ 111/mo.",
+    plan: "Business Standard",
+    price: "₹ 600/mo.",
     intro: "Web and mobile apps and services",
     covered: covered.filter((a, i) => i < 10),
     points: [
@@ -105,8 +105,8 @@ const forBuisness = [
   {
     key: "3",
     title: "Microsoft 365",
-    plan: "Business Basic",
-    price: "₹ 111/mo.",
+    plan: "Business Premium",
+    price: "₹ 1250/mo.",
     intro: "Web and mobile apps and services",
     covered,
     points: [

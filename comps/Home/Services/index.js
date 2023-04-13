@@ -34,10 +34,10 @@ function Services() {
 
         <div className="dc p-2 bg-white rounded-md md:rounded-xl">
           <Image
-            src="/img/home/service/aws.webp"
+            src="/img/home/service/zoho.png"
             alt=""
-            width={90}
-            height={54}
+            width={140}
+            height={60}
             className="max-sm:w-12"
           />
         </div>

@@ -49,22 +49,20 @@ function Nav() {
               links.map(l => (
                 <div
                   key={l.title}
-                  className={`overflow-hidden max-lg:mb-2 ${active === l.title ? "" : "max-sm:h-8"}`}
+                  className="max-lg:mb-2"
                 >
-                  <strong
-                    className="df mb-2 md:mb-4 font-semibold text-[#010101] cursor-pointer"
-                    onClick={() => setActive(p => p === l.title ? "" : l.title)}
+                  <Link
+                    className="df mb-2 md:mb-4 font-semibold text-[#010101] hover:text-primary cursor-pointer"
+                    href={l.to}
                   >
                     {l.title}
-
-                    <Arrow className="w-3 h-3 ml-auto sm:hidden" />
-                  </strong>
+                  </Link>
 
                   {l.list.map(a => (
                     <Link
                       key={a.title}
                       href={a.to}
-                      className="df px-1 py-0.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink"
+                      className="df lg:px-1 lg:p-0.5 lg:mr-1.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink"
                     >
                       {a.title}
                       <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block" />
