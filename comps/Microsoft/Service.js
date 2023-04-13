@@ -11,44 +11,44 @@ const list = [
       {
         src: "/img/microsoft/services/Word.png",
         alt: "Word",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Excel.png",
         alt: "Excel",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Powerpoint.png",
         alt: "Powerpoint",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Outlook.png",
         alt: "Outlook",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Access.png",
         alt: "Access",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Onenote.png",
         alt: "OneNote",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Publisher.png",
         alt: "Publisher",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -63,20 +63,20 @@ const list = [
       {
         src: "/img/microsoft/services/Sharepoint.png",
         alt: "Sharepoint",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Teams.png",
         alt: "Teams",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Yammer.png",
         alt: "Yammer",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -91,20 +91,20 @@ const list = [
       {
         src: "/img/microsoft/services/PowerApps.png",
         alt: "Power Apps",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Flow.png",
         alt: "Flow",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Forms.png",
         alt: "Forms",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -116,33 +116,33 @@ const list = [
       {
         src: "/img/microsoft/services/My-Analytics.png",
         alt: "My Analytics",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Power-BI.png",
         alt: "Power of BI",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
   {
     title: "Email & Calendaring",
     wrapperCls: "w-full",
-    titleClass: "left-4 md:left-8 xs:whitespace-nowrap",
+    titleClass: "left-0.5 xs:left-4 md:left-8 xs:whitespace-nowrap",
     list: [
       {
         src: "/img/microsoft/services/Exchange.png",
         alt: "Exchange",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
       {
         src: "/img/microsoft/services/Calendar.png",
         alt: "Calendar",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -154,8 +154,8 @@ const list = [
       {
         src: "/img/microsoft/services/Project.png",
         alt: "Project",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -167,8 +167,8 @@ const list = [
       {
         src: "/img/microsoft/services/Delver.png",
         alt: "Delve",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -180,8 +180,8 @@ const list = [
       {
         src: "/img/microsoft/services/One-Drive.png",
         alt: "OneDrive",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -193,8 +193,8 @@ const list = [
       {
         src: "/img/microsoft/services/Visio.png",
         alt: "Visio Online",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -206,8 +206,8 @@ const list = [
       {
         src: "/img/microsoft/services/People.png",
         alt: "People",
-        width: 88,
-        height: 88,
+        width: 86,
+        height: 86,
       },
     ]
   },
@@ -235,7 +235,7 @@ function Card({
           >
             <Image
               {...a}
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 mdb:w-16 mdb:h-16 lg:w-20 lg:h-20 xl:w-[88px] xl:h-[88px]"
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 mdb:w-16 mdb:h-16 lg:w-20 lg:h-20 xl:w-[86px] xl:h-[86px]"
             />
 
             {a.alt}
@@ -249,13 +249,13 @@ function Card({
 function Service() {
   return (
     <div className="p-8 pt-16 bg-light">
-      <h2 className="dc gap-4 mb-4 text-2xl md:text-3xl xl:text-[40px] font-bold text-center">
+      <h2 className="dc xs:gap-4 mb-4 text-xl xs:text-2xl md:text-3xl xl:text-[40px] font-bold text-center">
         <Image
           src="/img/microsoft/services/Microsoft.png"
           alt=""
           width={56}
           height={56}
-          className="w-8 h-8 md:w-11 md:h-11 xl:w-[54px] xl:h-[54px]"
+          className="w-6 h-6 xs:w-8 xs:h-8 md:w-11 md:h-11 xl:w-[54px] xl:h-[54px]"
         />
         Microsoft 365 Services
       </h2>

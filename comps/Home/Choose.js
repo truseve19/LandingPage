@@ -23,7 +23,7 @@ const data = [
     id: "4",
     img: "/img/home/choose/migration.png",
     title: "Seamless Migration",
-    desc: "We understand the importance of data when switching to Microsoft 365 or Google Workspace, that's why our migration experts are here to ensure a seamless transition without any disruptions.",
+    desc: "We understand the importance of data when switching to Cloud Workspace, that's why our migration experts are here to ensure a seamless transition without any disruptions.",
   },
   {
     id: "5",

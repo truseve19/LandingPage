@@ -15,8 +15,8 @@ function Header() {
         <h1 className="mb-4 text-2xl xs:text-3xl md:text-4xl xl:text-[47px] xl:leading-[1.2] font-extrabold">
           Buy Microsoft 365 <br />
           Starting from&nbsp;
-          <span className="text-base md:text-lg xl:text-xl font-bold text-[#41A5EE] relative">
-            <span className="absolute top-2.5 left-0.5 w-12 h-0.5 rotate-[20deg] bg-[#FF5454]"></span>
+          <span className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] font-bold text-[#41A5EE] relative">
+            <span className="absolute top-2.5 md:top-4 xl:top-6 left-0.5 w-12 md:w-14 xl:w-20 h-0.5 rotate-[20deg] bg-[#FF5454]"></span>
             ₹196
           </span><br className="lg:hidden" />
           &nbsp;₹ 111/mo.

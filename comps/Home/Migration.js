@@ -56,8 +56,8 @@ function Migration() {
           Migration made easy with Expert assistance
         </h2>
 
-        <p className="text-xl font-semibold text-[#494949] text-center">
-          Four migration techniques based on application and user needs.
+        <p className="text-sm md:text-base lg:text-lg xl:text-xl font-medium text-[#494949] text-center">
+          Three migration techniques based on application and user needs.
         </p>
       </div>
 

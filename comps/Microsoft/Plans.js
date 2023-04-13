@@ -129,15 +129,15 @@ function Card({
     <div className="flex flex-col bg-white">
       <div className="dfc items-center gap-4 p-6 bg-primary text-white rounded-md text-center sticky top-20">
         <p className="text-[13px] md:text-[15px] xl:text-[17px] font-medium">{title}</p>
-        <p className="text-xl md:text-2xl xl:text-[27px] font-bold">{plan}</p>
-        <p className="text-3xl md:text-4xl xl:text-[47px] font-extrabold">{price}</p>
+        <p className="text-lg md:text-xl xl:text-2xl font-semibold">{plan}</p>
+        <p className="text-3xl md:text-4xl xl:text-[40px] font-bold">{price}</p>
 
         <button className="mt-2 text-[13px] md:text-[15px] xl:text-[17px] font-medium bg-[#001252] text-white shadow-[0_4px_4px_0_#00000040]">
           Order Now
         </button>
       </div>
 
-      <div className="my-6 px-5 text-[13px] md:text-[15px] xl:text-[17px] font-medium text-[#656565E3]">
+      <div className="my-6 px-5 text-[13px] md:text-[15px] xl:text-[17px] text-[#656565E3]">
         {intro}
       </div>
 
@@ -146,13 +146,13 @@ function Card({
           covered.map((c, i) => (
             <div
               key={c.key}
-              className={`dfc items-center gap-1 text-xs md:text-[13px] font-medium text-[#888585] ${parentIn === 1 && i === 8 ? "col-start-2" : ""}`}
+              className={`dfc items-center gap-1 text-xs font-medium text-[#888585] ${parentIn === 1 && i === 8 ? "col-start-2" : ""}`}
             >
               <Image
                 src={c.src}
                 alt={c.alt}
-                width={45}
-                height={45}
+                width={36}
+                height={36}
               />
               {c.alt}
             </div>
@@ -169,7 +169,7 @@ function Card({
           points.map((p, i) => (
             <li
               key={i}
-              className="flex gap-2 lg:gap-4 mb-4 text-xs md:text-sm xl:text-base font-medium text-[#656565]"
+              className="flex gap-2 lg:gap-4 mb-4 text-xs md:text-sm xl:text-base text-[#656565]"
             >
               <span className="w-2 h-2 mdb:w-3 mdb:h-3 mt-1 mdb:mt-1.5 shrink-0 border-2 border-primary rounded-full"></span>
               {p}
@@ -189,7 +189,7 @@ function Plans() {
   const [active, setActive] = useState("For Business")
 
   return (
-    <div className="bg-light">
+    <div className="pt-8 bg-light">
       <h2 className="py-6 text-2xl md:text-3xl xl:text-[38px] font-bold text-[#202020] text-center">
         Price Plans
       </h2>

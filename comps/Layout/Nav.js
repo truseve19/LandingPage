@@ -3,14 +3,12 @@ import Link from "next/link";
 
 import RightArrow from "../../svg/arrow.svg";
 import Hamburger from "../../svg/hamburger.svg";
-import Arrow from "../../svg/dropdown.svg";
 import Cross from "../../svg/cross.svg";
 
 import links from "../../constants/links";
 import ConnectUsBtn from "../Common/ConnectUsBtn";
 
 function Nav() {
-  const [active, setActive] = useState("")
   const [open, setOpen] = useState(false)
 
   return (
@@ -52,8 +50,9 @@ function Nav() {
                   className="max-lg:mb-2"
                 >
                   <Link
-                    className="df mb-2 md:mb-4 font-semibold text-[#010101] hover:text-primary cursor-pointer"
                     href={l.to}
+                    onClick={() => setOpen(false)}
+                    className="df mb-2 md:mb-4 font-semibold text-[#010101] hover:text-primary cursor-pointer"
                   >
                     {l.title}
                   </Link>
@@ -63,6 +62,7 @@ function Nav() {
                       key={a.title}
                       href={a.to}
                       className="df lg:px-1 lg:p-0.5 lg:mr-1.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink"
+                      onClick={() => setOpen(false)}
                     >
                       {a.title}
                       <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block" />
@@ -77,6 +77,7 @@ function Nav() {
         <Link
           href=""
           className="block py-1 max-lg:px-1.5 shrink-0 text-[#191c1f] hover:text-primary"
+          onClick={() => setOpen(false)}
         >
           About us
         </Link>
@@ -84,6 +85,7 @@ function Nav() {
         <Link
           href=""
           className="block py-1 max-lg:px-1.5 shrink-0 text-[#191c1f] hover:text-primary"
+          onClick={() => setOpen(false)}
         >
           Contact us
         </Link>
