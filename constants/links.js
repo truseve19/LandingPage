@@ -5,7 +5,7 @@ const links = [
     list: [
       {
         to: "/microsoft",
-        title: "Microsoft"
+        title: "Microsoft 365"
       },
       {
         to: "/",
