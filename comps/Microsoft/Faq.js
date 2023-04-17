@@ -4,38 +4,38 @@ import Arrow from '../../svg/dropdown.svg';
 const data = [
   {
     key: "1",
-    quest: "What is Microsoft 365?",
-    ans: "With its robust Office apps, advanced security features, and intelligent cloud services, Microsoft 365 is a comprehensive productivity platform that can help you and your team work more efficiently and effectively whether you're at home, on the go, or working from the office.",
+    quest: "What exactly is Microsoft 365?",
+    ans: "Microsoft 365 is a complete productivity platform that can help you and your team work more productively whether you're at home, on the move, or in the office thanks to its powerful Office programs, cutting-edge security features, and intelligent cloud services.",
   },
   {
     key: "2",
-    quest: "Do I need an internet connection to use Microsoft 365?",
-    ans: "Office apps such as Word, Excel, PowerPoint, and Outlook can be installed on any device and used offline. Changes you make sync automatically with OneDrive when online. This enables you to access your documents from any device with OneDrive installed, even without an internet connection. Outlook allows you to manage your email, appointments, meetings, and tasks. Offline changes to your Outlook inbox or outbox will sync across devices when you reconnect to the internet.",
+    quest: "Does Microsoft 365 require an internet connection to use?",
+    ans: "Office applications like Word, Excel, PowerPoint, and Outlook can be downloaded and used offline on any device. When online, OneDrive instantly syncs any changes you make. As a result, you can view your documents from any OneDrive-enabled device, even when no internet connection is available. You can manage your email, appointments, meetings, and tasks using Outlook. Your Outlook inbox and outbox will sync with offline modifications.",
   },
   {
     key: "3",
     quest: "How many devices can I install the Office apps on?",
-    ans: "Access Office apps on up to five PCs or Macs, five tablets, and five smartphones to get the most out of Office.",
+    ans: "To get the most out of microsoft office, you can install it on up to five devices (PCs or Macs, tablets, and smartphones).",
   },
   {
     key: "4",
-    quest: "How many users can I host on a Microsoft Teams meeting?",
-    ans: "With Microsoft Teams, you can invite up to 1,000 participants, internal or external, to join a meeting from desktops, laptops, tablets, and smartphones, enabling chat, audio, and video interaction. For larger meetings, add up to 10,000 view-only attendees.",
+    quest: "What is the maximum number of users that can attend a Microsoft Teams meeting?",
+    ans: "You can invite up to 1,000 internal or external people to join a meeting from computers, laptops, tablets, and smartphones, allowing for chat, audio, and video interaction. Add 10,000 view-only attendees for larger meetings.",
   },
   {
     key: "5",
     quest: "What forms of payments are accepted?",
-    ans: "You can choose to be billed monthly or annually, and all major credit cards are accepted for payment depending on the services you select.",
+    ans: "Depending on the services you select, you can choose to be billed monthly or annually, and all major credit cards are accepted for payment.",
   },
   {
     key: "6",
-    quest: "Which languages are supported by Microsoft 365?",
-    ans: "Most countries and regions offer Microsoft 365 plans. If unavailable, an Office 2021 suite is an alternative. Ensure selecting the correct country or region for billing, payment, and legal agreements.",
+    quest: "Is it possible to cancel my subscription? What happens to the information I store in my Microsoft 365 account?",
+    ans: "Subscriptions may be cancelled within 7 days of purchase for a pro-rata refund, minus a cancellation fee of Rs. 100.",
   },
   {
     key: "7",
-    quest: "Can I cancel my subscription? What happens to the data I upload in my Microsoft 365 account?",
-    ans: "Subscriptions may be cancelled within 7 days of purchasing the license for a pro-rata refund, minus an additional cancellation charge of Rs. 100.",
+    quest: "How long does the Microsoft 365 free trial last?",
+    ans: "Microsoft provides a 30-day free trial on selected SKUs, and we will assist you in determining which SKU is best for you.",
   },
 ]
 

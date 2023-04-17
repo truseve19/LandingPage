@@ -3,28 +3,28 @@ import Image from "next/image";
 const data = [
   {
     key: "1",
-    title: "Personalized payment",
+    title: "Personalized Payments",
     para: "We offer multiple payment modes to ensure your convenience when buying Microsoft 365 from us.",
   },
   {
     key: "2",
     title: "Effortless Onboarding",
-    para: "Our team helps you select the most suitable MS365 plan for your business needs, ensuring a seamless and effortless onboarding experience.",
+    para: "Our team helps you select the most suitable Microsoft 365 plan for your business needs, ensuring a seamless and effortless onboarding experience.",
   },
   {
     key: "3",
-    title: "Secure Collaboration",
-    para: "Microsoft 365's security features enable secure collaboration, enhancing productivity and teamwork while maintaining enterprise-level security.",
+    title: "Migration Support",
+    para: "Get Your data safely and smoothly transferred from a host of suites/mailing platforms like google workspace, zoho, zimbra, Godaddy, etc to Microsoft 365 with our reliable migration support.",
   },
   {
     key: "4",
-    title: "24x7 Technical support",
-    para: "We're Here to Assist You with Everything from Basic Information to Ticket Escalation.",
+    title: "24X7 Technical Support",
+    para: "Our expert support team will assist you with everything from basic information to ticket escalation.",
   },
   {
     key: "5",
-    title: "Migration Support",
-    para: "Get Your Data Safely and Smoothly Transferred to Microsoft 365 with Our Reliable Migration Support.",
+    title: "Secure Collaboration",
+    para: "Microsoft 365's security features enable secure collaboration, enhancing productivity and teamwork while maintaining enterprise-level security.",
   },
 ]
 

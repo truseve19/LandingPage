@@ -1,4 +1,4 @@
-import Trusted from "./Trusted";
+// import Trusted from "./Trusted";
 import Service from "./Service";
 import Reason from "./Reason";
 import Header from "./Header";
@@ -12,7 +12,7 @@ function Microsoft() {
       <Plans />
       <Service />
       <Reason />
-      <Trusted />
+      {/* <Trusted /> */}
       <Faq />
     </>
   )

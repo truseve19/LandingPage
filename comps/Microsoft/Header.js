@@ -17,14 +17,13 @@ function Header() {
           Starting from&nbsp;
           <span className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] font-bold text-[#41A5EE] relative">
             <span className="absolute top-2.5 md:top-4 xl:top-6 left-0.5 w-12 md:w-14 xl:w-20 h-0.5 rotate-[20deg] bg-[#FF5454]"></span>
-            ₹196
+            ₹136
           </span><br className="lg:hidden" />
           &nbsp;₹ 111/mo.
         </h1>
 
         <p className="text-xs md:text-sm xl:text-base text-[#F9F9F9A3]">
-          Supercharge Your Productivity and Security with Automated Collaboration Tools <br className="hidden sm:block" />
-          that Ensure Enterprise-Grade Security
+          Supercharge Your Productivity and Security with Automated Collaboration Tools that Ensure Enterprise-Grade Security
         </p>
       </div>
     </div>

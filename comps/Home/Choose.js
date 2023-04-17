@@ -23,13 +23,13 @@ const data = [
     id: "4",
     img: "/img/home/choose/migration.png",
     title: "Seamless Migration",
-    desc: "We understand the importance of data when switching to Cloud Workspace, that's why our migration experts are here to ensure a seamless transition without any disruptions.",
+    desc: "We recognize the significance of data transfer during the transition of services, which is why our migration experts are available to guarantee a smooth switch without any interruptions.",
   },
   {
     id: "5",
     img: "/img/home/choose/customised.png",
     title: "Affordable Hardware Solutions",
-    desc: "From startups to enterprises, we offer comprehensive hardware services that cover everything like desktop, laptop, servers and also support server management and data backup.",
+    desc: "From startups to enterprises, we offer customized hardware solutions that cover everything like desktop, laptop, servers  and also support server management and data backup.",
   },
   {
     id: "6",
