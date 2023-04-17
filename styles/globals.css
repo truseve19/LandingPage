@@ -90,6 +90,19 @@
   .accordion-panel {
     @apply overflow-hidden transition-[height] duration-200;
   }
+
+  .key-service-box {
+    @apply 
+      min-h-[74px] 
+      md:min-w-[74px] 
+      p-2 bg-white rounded-md md:rounded-xl 
+      overflow-hidden relative
+    ;
+  }
+  
+  .key-service-img-box {
+    @apply absolute w-full h-full transition-transform duration-1000 bg-white;
+  }  
 }
 
 nav {

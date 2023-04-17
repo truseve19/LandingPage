@@ -1,6 +1,28 @@
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
+import { data1, data2, data3, data4, data5, data6 } from './data';
+import SpecialBox from "./SpecialBox";
+import Animater from "./Animater";
+
 function Services() {
+  const [selected, setSelected] = useState(-1)
+  const timerRef = useRef()
+
+  useEffect(() => {
+    timerRef.current = setInterval(() => {
+      setSelected(p => p === 2 ? 0 : p + 1)
+    }, 3000)
+
+    return () => clearInterval(timerRef.current)
+  }, [])
+
+  const set = () => {
+    timerRef.current = setInterval(() => {
+      setSelected(p => p === 2 ? 0 : p + 1)
+    }, 3000)
+  }
+
   return (
     <section className="bg-primary text-white relative overflow-x-hidden">
       <img
@@ -13,78 +35,19 @@ function Services() {
         Our key services
       </h2>
 
-      <div className="service-grid grid gap-4 sm:gap-6 w-fit mx-auto p-6 sm:p-12 rounded-2xl md:rounded-[35px] border border-[#98F9FF]">
-        <div className="dc p-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/google-workspace.webp"
-            alt=""
-            width={130}
-            height={82}
-          />
-        </div>
+      <div
+        className="service-grid grid gap-4 sm:gap-6 w-fit mx-auto p-6 sm:p-12 rounded-2xl md:rounded-[35px] border border-[#98F9FF]"
+        onMouseEnter={() => clearInterval(timerRef.current)}
+        onMouseLeave={set}
+      >
+        <Animater selected={selected} data={data1} />
+        <Animater selected={selected} data={data2} wrapperCls="col-span-2" />
+        <Animater selected={selected} data={data3} />
 
-        <div className="dc p-2 col-span-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/microsoft.webp"
-            alt=""
-            width={300}
-            height={125}
-          />
-        </div>
+        <SpecialBox selected={selected} />
 
-        <div className="dc p-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/zoho.png"
-            alt=""
-            width={140}
-            height={60}
-            className="max-sm:w-12"
-          />
-        </div>
-
-        <div className="flex xs:flex-col justify-between items-center gap-2 xs:gap-6 py-2 px-4 xs:py-6 xl:py-12 max-xs:col-span-3 xs:row-span-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/hp.webp"
-            alt=""
-            width={100}
-            height={100}
-            className="max-xs:w-12"
-          />
-
-          <Image
-            src="/img/home/service/dell.webp"
-            alt=""
-            width={100}
-            height={100}
-            className="max-xs:w-12"
-          />
-
-          <Image
-            src="/img/home/service/apple.webp"
-            alt=""
-            width={42}
-            height={42}
-            className="xs:hidden"
-          />
-        </div>
-
-        <div className="dc p-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/matlab.webp"
-            alt=""
-            width={186}
-            height={136}
-          />
-        </div>
-
-        <div className="dc p-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/Googlecloud.webp"
-            alt=""
-            width={160}
-            height={160}
-          />
-        </div>
+        <Animater selected={selected} data={data4} />
+        <Animater selected={selected} data={data5} />
 
         <div className="dc xs:hidden p-2 bg-white rounded-md md:rounded-xl">
           <Image
@@ -95,15 +58,7 @@ function Services() {
           />
         </div>
 
-        <div className="dc p-2 col-span-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/Freshworks.webp"
-            alt=""
-            width={260}
-            height={40}
-            className="max-sm:w-32"
-          />
-        </div>
+        <Animater selected={selected} data={data6} wrapperCls="col-span-2" />
       </div>
     </section>
   )
