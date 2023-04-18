@@ -46,6 +46,7 @@ export const data1 = [
   {
     id: 2,
     animate: animate_RL,
+    className: "p-0",
     imgProps: {
       src: "/img/home/service/Dropbox.png",
       alt: "",
@@ -84,6 +85,7 @@ export const data2 = [
       alt: "",
       width: 200,
       height: 90,
+      className: "w-16",
     },
   },
   {
@@ -94,6 +96,7 @@ export const data2 = [
       alt: "",
       width: 200,
       height: 90,
+      className: "w-20 xs:w-24 sm:w-32 md:w-36 mdb:w-40 lg:w-44 xl:w-[200px]",
     },
   },
   {
@@ -104,6 +107,7 @@ export const data2 = [
       alt: "",
       width: 200,
       height: 90,
+      className: "w-20 xs:w-24 sm:w-32 md:w-36 mdb:w-40 lg:w-44 xl:w-[200px]",
     },
   },
 ]
@@ -267,6 +271,7 @@ export const data6 = [
       alt: "",
       width: 220,
       height: 180,
+      className: "w-20 xs:w-24 sm:w-32 md:w-36 mdb:w-40 lg:w-44 xl:w-[220px]",
     },
   },
   {
@@ -277,6 +282,7 @@ export const data6 = [
       alt: "",
       width: 220,
       height: 180,
+      className: "w-20 xs:w-24 sm:w-32 md:w-36 mdb:w-40 lg:w-44 xl:w-[220px]",
     },
   },
 ]
@@ -288,6 +294,7 @@ export const dataSpecial = [
       {
         id: 0,
         animate: animate_LR,
+        className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/hp.webp",
           alt: "",
@@ -299,6 +306,7 @@ export const dataSpecial = [
       {
         id: 1,
         animate: animate_LR,
+        className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/deli.png",
           alt: "",
@@ -334,6 +342,7 @@ export const dataSpecial = [
       {
         id: 0,
         animate: animate_RL,
+        className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/dell.webp",
           alt: "",
@@ -345,11 +354,13 @@ export const dataSpecial = [
       {
         id: 1,
         animate: animate_RL,
+        className: "p-0 md:p-2",
         imgProps: {
           src: "/img/home/service/TP link.png",
           alt: "",
           width: 140,
           height: 140,
+          className: "w-24",
         },
       },
       {
@@ -381,6 +392,7 @@ export const dataSpecial = [
       {
         id: 0,
         animate: animate_LR,
+        className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/apple.webp",
           alt: "",
@@ -392,6 +404,7 @@ export const dataSpecial = [
       {
         id: 1,
         animate: animate_LR,
+        className: "p-2",
         imgProps: {
           src: "/img/home/service/Oculus.png",
           alt: "",

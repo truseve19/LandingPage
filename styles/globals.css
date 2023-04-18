@@ -96,7 +96,7 @@
   }
   
   .key-service-img-box {
-    @apply absolute w-full h-full bg-white;
+    @apply p-2 absolute w-full h-full bg-white;
   }  
 }
 
