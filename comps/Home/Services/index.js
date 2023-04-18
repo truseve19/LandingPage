@@ -4,7 +4,7 @@ import SpecialBox from "./SpecialBox";
 import Animater from "./Animater";
 
 function Services() {
-  const [selected, setSelected] = useState(3)
+  const [selected, setSelected] = useState(0)
   const timerRef = useRef()
 
   useEffect(() => {
@@ -34,9 +34,9 @@ function Services() {
       </h2>
 
       <div
-        className="service-grid grid gap-4 sm:gap-6 w-fit mx-auto p-6 sm:p-12 rounded-2xl md:rounded-[35px] border border-[#98F9FF]"
         onMouseEnter={() => clearInterval(timerRef.current)}
         onMouseLeave={set}
+        className="service-grid grid gap-2 xs:gap-4 sm:gap-6 w-fit mx-auto p-6 sm:p-12 rounded-2xl md:rounded-3xl lg:rounded-[35px] border border-[#98F9FF]"
       >
         <Animater selected={selected} data={data1} />
         <Animater selected={selected} data={data2} wrapperCls="col-span-2" />
@@ -46,8 +46,24 @@ function Services() {
 
         <Animater selected={selected} data={data4} />
         <Animater selected={selected} data={data5} />
-        <Animater selected={selected} data={dataMid} wrapperCls="xs:hidden" />
+        <Animater selected={selected} data={dataMid} wrapperCls="md:hidden" />
         <Animater selected={selected} data={data6} wrapperCls="col-span-2" />
+      </div>
+
+      <div
+        onMouseEnter={() => clearInterval(timerRef.current)}
+        onMouseLeave={set}
+        className="dc w-fit mx-auto gap-4 mt-4 xs:mt-6 md:mt-8"
+      >
+        {
+          [0, 1, 2, 3].map(a => (
+            <button
+              key={a}
+              className={`h-3 p-0 rounded-full transition-all duration-500 ${selected === a ? "w-5 bg-[#98F9FF]" : "w-3 bg-white opacity-80 hover:opacity-100"} hover:bg-[#98F9FF]`}
+              onClick={() => setSelected(a)}
+            ></button>
+          ))
+        }
       </div>
     </section>
   )

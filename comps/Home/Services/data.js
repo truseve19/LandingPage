@@ -49,8 +49,8 @@ export const data1 = [
     imgProps: {
       src: "/img/home/service/Dropbox.png",
       alt: "",
-      width: 180,
-      height: 140,
+      width: 200,
+      height: 160,
     },
   },
   {
@@ -376,7 +376,7 @@ export const dataSpecial = [
   },
   {
     id: 2,
-    className: "xs:hidden",
+    className: "md:hidden",
     list: [
       {
         id: 0,
@@ -386,7 +386,7 @@ export const dataSpecial = [
           alt: "",
           width: 42,
           height: 42,
-          className: "xs:hidden",
+          className: "md:hidden",
         },
       },
       {
@@ -397,7 +397,7 @@ export const dataSpecial = [
           alt: "",
           width: 68,
           height: 68,
-          className: "xs:hidden",
+          className: "md:hidden",
         },
       },
       {
@@ -408,7 +408,7 @@ export const dataSpecial = [
           alt: "",
           width: 68,
           height: 68,
-          className: "xs:hidden",
+          className: "md:hidden",
         },
       },
       {
@@ -419,7 +419,7 @@ export const dataSpecial = [
           alt: "",
           width: 68,
           height: 68,
-          className: "xs:hidden",
+          className: "md:hidden",
         },
       },
     ]

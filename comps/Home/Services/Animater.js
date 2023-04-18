@@ -9,7 +9,7 @@ function Animater({ data = [], selected, wrapperCls = "" }) {
           <Transition
             key={d.id}
             show={d.id === selected}
-            className={`dc flex-col key-service-img-box max-sm:p-2`}
+            className="dc flex-col key-service-img-box p-2"
             enter="transition-transform duration-1000"
             leave="transition-transform duration-700"
             enterFrom={d.animate.enterFrom}

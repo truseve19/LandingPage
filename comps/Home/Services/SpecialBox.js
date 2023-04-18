@@ -3,7 +3,7 @@ import { dataSpecial } from "./data";
 
 function SpecialBox({ selected }) {
   return (
-    <div className="flex xs:flex-col gap-2 xs:gap-6 max-xs:col-span-3 xs:row-span-2 bg-white rounded-md md:rounded-xl">
+    <div className="flex md:flex-col gap-2 xs:gap-6 max-md:col-span-3 md:row-span-2 bg-white rounded-md md:rounded-xl">
       {
         dataSpecial.map(d => (
           <Animater

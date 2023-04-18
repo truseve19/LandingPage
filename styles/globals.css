@@ -92,16 +92,11 @@
   }
 
   .key-service-box {
-    @apply 
-      min-h-[74px] 
-      md:min-w-[74px] 
-      p-2 bg-white rounded-md md:rounded-xl 
-      overflow-hidden relative
-    ;
+    @apply bg-white rounded-md md:rounded-xl overflow-hidden relative;
   }
   
   .key-service-img-box {
-    @apply absolute w-full h-full transition-transform duration-1000 bg-white;
+    @apply absolute w-full h-full bg-white;
   }  
 }
 
@@ -140,7 +135,16 @@ nav {
 
 .service-grid {
   @apply 
-    grid-cols-4 xs:grid-cols-5 
+    grid-cols-[repeat(4,50px)] 
+    grid-rows-[repeat(3,50px)] 
+    min-[360px]:grid-cols-[repeat(4,60px)] 
+    min-[360px]:grid-rows-[repeat(3,60px)] 
+    xs:grid-cols-[repeat(4,72px)] 
+    xs:grid-rows-[repeat(3,72px)] 
+    sm:grid-cols-[repeat(4,90px)] 
+    sm:grid-rows-[repeat(3,90px)] 
+    md:grid-cols-[repeat(5,96px)] 
+    md:grid-rows-[repeat(2,96px)] 
     mdb:grid-cols-[repeat(5,120px)] 
     mdb:grid-rows-[repeat(2,120px)] 
     xl:grid-cols-[repeat(5,168px)] 
