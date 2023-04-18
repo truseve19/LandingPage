@@ -16,10 +16,28 @@ const animate_TB = {
   leaveTo: "translate-y-full"
 }
 
-const animate_BT = {
-  enterFrom: "translate-y-full",
-  enterTo: "translate-y-0",
-  leaveTo: "-translate-y-full"
+const animate_data3 = {
+  enterFrom: "translate-x-full md:translate-x-0 md:-translate-y-full",
+  enterTo: "translate-x-0 md:translate-y-0",
+  leaveTo: "-translate-x-full md:translate-x-0 md:translate-y-full"
+}
+
+const animate_dataSpe_1 = {
+  enterFrom: "translate-y-full md:translate-y-0 md:-translate-x-full",
+  enterTo: "translate-y-0 md:translate-x-0",
+  leaveTo: "-translate-y-full md:translate-y-0 md:translate-x-full"
+}
+
+const animate_dataSpe_2 = {
+  enterFrom: "-translate-y-full md:translate-y-0 md:translate-x-full",
+  enterTo: "translate-y-0 md:translate-x-0",
+  leaveTo: "translate-y-full md:translate-y-0 md:-translate-x-full"
+}
+
+const animate_data5 = {
+  enterFrom: "-translate-x-full md:translate-x-0 md:-translate-y-full",
+  enterTo: "translate-x-0 md:translate-y-0",
+  leaveTo: "translate-x-full md:translate-x-0 md:translate-y-full"
 }
 
 export const data1 = [
@@ -115,7 +133,7 @@ export const data2 = [
 export const data3 = [
   {
     id: 0,
-    animate: animate_TB,
+    animate: animate_data3,
     imgProps: {
       src: "/img/home/service/zoho.png",
       alt: "",
@@ -125,7 +143,7 @@ export const data3 = [
   },
   {
     id: 1,
-    animate: animate_TB,
+    animate: animate_data3,
     imgProps: {
       src: "/img/home/service/cisco.png",
       alt: "",
@@ -135,7 +153,7 @@ export const data3 = [
   },
   {
     id: 2,
-    animate: animate_TB,
+    animate: animate_data3,
     imgProps: {
       src: "/img/home/service/Brother.png",
       alt: "",
@@ -145,7 +163,7 @@ export const data3 = [
   },
   {
     id: 3,
-    animate: animate_TB,
+    animate: animate_data3,
     imgProps: {
       src: "/img/home/service/Fuji_electric.png",
       alt: "",
@@ -201,7 +219,7 @@ export const data4 = [
 export const data5 = [
   {
     id: 0,
-    animate: animate_BT,
+    animate: animate_data5,
     imgProps: {
       src: "/img/home/service/Googlecloud.webp",
       alt: "",
@@ -211,7 +229,7 @@ export const data5 = [
   },
   {
     id: 1,
-    animate: animate_BT,
+    animate: animate_data5,
     imgProps: {
       src: "/img/home/service/Benq.png",
       alt: "",
@@ -221,7 +239,7 @@ export const data5 = [
   },
   {
     id: 2,
-    animate: animate_BT,
+    animate: animate_data5,
     imgProps: {
       src: "/img/home/service/dji.png",
       alt: "",
@@ -231,7 +249,7 @@ export const data5 = [
   },
   {
     id: 3,
-    animate: animate_BT,
+    animate: animate_data5,
     imgProps: {
       src: "/img/home/service/hikvision.png",
       alt: "",
@@ -293,7 +311,7 @@ export const dataSpecial = [
     list: [
       {
         id: 0,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/hp.webp",
@@ -305,7 +323,7 @@ export const dataSpecial = [
       },
       {
         id: 1,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/deli.png",
@@ -316,7 +334,7 @@ export const dataSpecial = [
       },
       {
         id: 2,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         imgProps: {
           src: "/img/home/service/EMC.png",
           alt: "",
@@ -326,7 +344,7 @@ export const dataSpecial = [
       },
       {
         id: 3,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         imgProps: {
           src: "/img/home/service/honeywell.png",
           alt: "",
@@ -341,7 +359,7 @@ export const dataSpecial = [
     list: [
       {
         id: 0,
-        animate: animate_RL,
+        animate: animate_dataSpe_2,
         className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/dell.webp",
@@ -353,7 +371,7 @@ export const dataSpecial = [
       },
       {
         id: 1,
-        animate: animate_RL,
+        animate: animate_dataSpe_2,
         className: "p-0 md:p-2",
         imgProps: {
           src: "/img/home/service/TP link.png",
@@ -365,7 +383,7 @@ export const dataSpecial = [
       },
       {
         id: 2,
-        animate: animate_RL,
+        animate: animate_dataSpe_2,
         imgProps: {
           src: "/img/home/service/Seagate.png",
           alt: "",
@@ -375,7 +393,7 @@ export const dataSpecial = [
       },
       {
         id: 3,
-        animate: animate_RL,
+        animate: animate_dataSpe_2,
         imgProps: {
           src: "/img/home/service/idea forge.png",
           alt: "",
@@ -391,7 +409,7 @@ export const dataSpecial = [
     list: [
       {
         id: 0,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         className: "p-3 xs:p-4",
         imgProps: {
           src: "/img/home/service/apple.webp",
@@ -403,7 +421,7 @@ export const dataSpecial = [
       },
       {
         id: 1,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         className: "p-2",
         imgProps: {
           src: "/img/home/service/Oculus.png",
@@ -415,7 +433,7 @@ export const dataSpecial = [
       },
       {
         id: 2,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         imgProps: {
           src: "/img/home/service/zebra.png",
           alt: "",
@@ -426,7 +444,7 @@ export const dataSpecial = [
       },
       {
         id: 3,
-        animate: animate_LR,
+        animate: animate_dataSpe_1,
         imgProps: {
           src: "/img/home/service/optoma.png",
           alt: "",
@@ -442,7 +460,7 @@ export const dataSpecial = [
 export const dataMid = [
   {
     id: 0,
-    animate: animate_LR,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/azure.webp",
       alt: "",
@@ -453,7 +471,7 @@ export const dataMid = [
   },
   {
     id: 1,
-    animate: animate_LR,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/Netgear.png",
       alt: "",
@@ -463,7 +481,7 @@ export const dataMid = [
   },
   {
     id: 2,
-    animate: animate_LR,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/Vmware.png",
       alt: "",
@@ -473,7 +491,7 @@ export const dataMid = [
   },
   {
     id: 3,
-    animate: animate_LR,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/Wacom.png",
       alt: "",
