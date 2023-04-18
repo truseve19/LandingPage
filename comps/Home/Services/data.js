@@ -1,27 +1,31 @@
-const X_0_to_100 = {
-  from: "-translate-x-full",
-  to: "translate-x-0",
+const animate_RL = {
+  enterFrom: "translate-x-full",
+  enterTo: "translate-x-0",
+  leaveTo: "-translate-x-full"
 }
 
-const X_100_to_0 = {
-  from: "translate-x-full",
-  to: "translate-x-0",
+const animate_LR = {
+  enterFrom: "-translate-x-full",
+  enterTo: "translate-x-0",
+  leaveTo: "translate-x-full"
 }
 
-const Y_0_to_100 = {
-  from: "-translate-y-full",
-  to: "translate-y-0",
+const animate_TB = {
+  enterFrom: "-translate-y-full",
+  enterTo: "translate-y-0",
+  leaveTo: "translate-y-full"
 }
 
-const Y_100_to_0 = {
-  from: "translate-y-full",
-  to: "translate-y-0",
+const animate_BT = {
+  enterFrom: "translate-y-full",
+  enterTo: "translate-y-0",
+  leaveTo: "-translate-y-full"
 }
 
 export const data1 = [
   {
     id: 0,
-    animateProps: X_0_to_100,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/google-workspace.webp",
       alt: "",
@@ -31,7 +35,7 @@ export const data1 = [
   },
   {
     id: 1,
-    animateProps: X_100_to_0,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/Zoom.png",
       alt: "",
@@ -41,7 +45,7 @@ export const data1 = [
   },
   {
     id: 2,
-    animateProps: X_100_to_0,
+    animate: animate_RL,
     imgProps: {
       src: "/img/home/service/Dropbox.png",
       alt: "",
@@ -49,12 +53,22 @@ export const data1 = [
       height: 140,
     },
   },
+  {
+    id: 3,
+    animate: animate_RL,
+    imgProps: {
+      src: "/img/home/service/dlink.png",
+      alt: "",
+      width: 120,
+      height: 90,
+    },
+  },
 ]
 
 export const data2 = [
   {
     id: 0,
-    animateProps: X_100_to_0,
+    animate: animate_LR,
     imgProps: {
       src: "/img/home/service/microsoft.webp",
       alt: "",
@@ -64,7 +78,7 @@ export const data2 = [
   },
   {
     id: 1,
-    animateProps: X_0_to_100,
+    animate: animate_LR,
     imgProps: {
       src: "/img/home/service/Salesforce.png",
       alt: "",
@@ -74,9 +88,19 @@ export const data2 = [
   },
   {
     id: 2,
-    animateProps: X_0_to_100,
+    animate: animate_LR,
     imgProps: {
       src: "/img/home/service/Belkin.png",
+      alt: "",
+      width: 200,
+      height: 90,
+    },
+  },
+  {
+    id: 3,
+    animate: animate_LR,
+    imgProps: {
+      src: "/img/home/service/Alienware.png",
       alt: "",
       width: 200,
       height: 90,
@@ -87,7 +111,7 @@ export const data2 = [
 export const data3 = [
   {
     id: 0,
-    animateProps: Y_0_to_100,
+    animate: animate_TB,
     imgProps: {
       src: "/img/home/service/zoho.png",
       alt: "",
@@ -97,7 +121,7 @@ export const data3 = [
   },
   {
     id: 1,
-    animateProps: Y_100_to_0,
+    animate: animate_TB,
     imgProps: {
       src: "/img/home/service/cisco.png",
       alt: "",
@@ -107,11 +131,21 @@ export const data3 = [
   },
   {
     id: 2,
-    animateProps: Y_100_to_0,
+    animate: animate_TB,
     imgProps: {
       src: "/img/home/service/Brother.png",
       alt: "",
       width: 120,
+      height: 100,
+    },
+  },
+  {
+    id: 3,
+    animate: animate_TB,
+    imgProps: {
+      src: "/img/home/service/Fuji_electric.png",
+      alt: "",
+      width: 100,
       height: 100,
     },
   },
@@ -120,7 +154,7 @@ export const data3 = [
 export const data4 = [
   {
     id: 0,
-    animateProps: X_100_to_0,
+    animate: animate_TB,
     imgProps: {
       src: "/img/home/service/matlab.webp",
       alt: "",
@@ -130,7 +164,7 @@ export const data4 = [
   },
   {
     id: 1,
-    animateProps: X_0_to_100,
+    animate: animate_TB,
     imgProps: {
       src: "/img/home/service/matrix.png",
       alt: "",
@@ -140,9 +174,19 @@ export const data4 = [
   },
   {
     id: 2,
-    animateProps: X_0_to_100,
+    animate: animate_TB,
     imgProps: {
       src: "/img/home/service/Corsair.png",
+      alt: "",
+      width: 120,
+      height: 100,
+    },
+  },
+  {
+    id: 3,
+    animate: animate_TB,
+    imgProps: {
+      src: "/img/home/service/holo lens.png",
       alt: "",
       width: 120,
       height: 100,
@@ -153,7 +197,7 @@ export const data4 = [
 export const data5 = [
   {
     id: 0,
-    animateProps: Y_100_to_0,
+    animate: animate_BT,
     imgProps: {
       src: "/img/home/service/Googlecloud.webp",
       alt: "",
@@ -163,7 +207,7 @@ export const data5 = [
   },
   {
     id: 1,
-    animateProps: Y_0_to_100,
+    animate: animate_BT,
     imgProps: {
       src: "/img/home/service/Benq.png",
       alt: "",
@@ -173,7 +217,7 @@ export const data5 = [
   },
   {
     id: 2,
-    animateProps: X_100_to_0,
+    animate: animate_BT,
     imgProps: {
       src: "/img/home/service/dji.png",
       alt: "",
@@ -181,12 +225,22 @@ export const data5 = [
       height: 150,
     },
   },
+  {
+    id: 3,
+    animate: animate_BT,
+    imgProps: {
+      src: "/img/home/service/hikvision.png",
+      alt: "",
+      width: 120,
+      height: 120,
+    },
+  },
 ]
 
 export const data6 = [
   {
     id: 0,
-    animateProps: X_0_to_100,
+    animate: animate_LR,
     imgProps: {
       src: "/img/home/service/Freshworks.webp",
       alt: "",
@@ -197,7 +251,7 @@ export const data6 = [
   },
   {
     id: 1,
-    animateProps: X_100_to_0,
+    animate: animate_LR,
     imgProps: {
       src: "/img/home/service/RUGTEK.png",
       alt: "",
@@ -207,9 +261,19 @@ export const data6 = [
   },
   {
     id: 2,
-    animateProps: X_100_to_0,
+    animate: animate_LR,
     imgProps: {
       src: "/img/home/service/Bose.png",
+      alt: "",
+      width: 220,
+      height: 180,
+    },
+  },
+  {
+    id: 3,
+    animate: animate_LR,
+    imgProps: {
+      src: "/img/home/service/Harman_Kardon.png",
       alt: "",
       width: 220,
       height: 180,
@@ -223,7 +287,7 @@ export const dataSpecial = [
     list: [
       {
         id: 0,
-        animateProps: X_0_to_100,
+        animate: animate_LR,
         imgProps: {
           src: "/img/home/service/hp.webp",
           alt: "",
@@ -234,7 +298,7 @@ export const dataSpecial = [
       },
       {
         id: 1,
-        animateProps: X_100_to_0,
+        animate: animate_LR,
         imgProps: {
           src: "/img/home/service/deli.png",
           alt: "",
@@ -244,12 +308,22 @@ export const dataSpecial = [
       },
       {
         id: 2,
-        animateProps: X_100_to_0,
+        animate: animate_LR,
         imgProps: {
           src: "/img/home/service/EMC.png",
           alt: "",
           width: 150,
           height: 150,
+        },
+      },
+      {
+        id: 3,
+        animate: animate_LR,
+        imgProps: {
+          src: "/img/home/service/honeywell.png",
+          alt: "",
+          width: 130,
+          height: 130,
         },
       },
     ]
@@ -259,7 +333,7 @@ export const dataSpecial = [
     list: [
       {
         id: 0,
-        animateProps: X_100_to_0,
+        animate: animate_RL,
         imgProps: {
           src: "/img/home/service/dell.webp",
           alt: "",
@@ -270,7 +344,7 @@ export const dataSpecial = [
       },
       {
         id: 1,
-        animateProps: X_0_to_100,
+        animate: animate_RL,
         imgProps: {
           src: "/img/home/service/TP link.png",
           alt: "",
@@ -280,12 +354,22 @@ export const dataSpecial = [
       },
       {
         id: 2,
-        animateProps: X_0_to_100,
+        animate: animate_RL,
         imgProps: {
           src: "/img/home/service/Seagate.png",
           alt: "",
           width: 140,
           height: 140,
+        },
+      },
+      {
+        id: 3,
+        animate: animate_RL,
+        imgProps: {
+          src: "/img/home/service/idea forge.png",
+          alt: "",
+          width: 120,
+          height: 120,
         },
       },
     ]
@@ -296,7 +380,7 @@ export const dataSpecial = [
     list: [
       {
         id: 0,
-        animateProps: Y_100_to_0,
+        animate: animate_LR,
         imgProps: {
           src: "/img/home/service/apple.webp",
           alt: "",
@@ -307,7 +391,7 @@ export const dataSpecial = [
       },
       {
         id: 1,
-        animateProps: Y_100_to_0,
+        animate: animate_LR,
         imgProps: {
           src: "/img/home/service/Oculus.png",
           alt: "",
@@ -318,7 +402,7 @@ export const dataSpecial = [
       },
       {
         id: 2,
-        animateProps: Y_100_to_0,
+        animate: animate_LR,
         imgProps: {
           src: "/img/home/service/zebra.png",
           alt: "",
@@ -327,6 +411,61 @@ export const dataSpecial = [
           className: "xs:hidden",
         },
       },
+      {
+        id: 3,
+        animate: animate_LR,
+        imgProps: {
+          src: "/img/home/service/optoma.png",
+          alt: "",
+          width: 68,
+          height: 68,
+          className: "xs:hidden",
+        },
+      },
     ]
+  },
+]
+
+export const dataMid = [
+  {
+    id: 0,
+    animate: animate_LR,
+    imgProps: {
+      src: "/img/home/service/azure.webp",
+      alt: "",
+      width: 60,
+      height: 40,
+      className: "max-sm:w-32",
+    },
+  },
+  {
+    id: 1,
+    animate: animate_LR,
+    imgProps: {
+      src: "/img/home/service/Netgear.png",
+      alt: "",
+      width: 60,
+      height: 60,
+    },
+  },
+  {
+    id: 2,
+    animate: animate_LR,
+    imgProps: {
+      src: "/img/home/service/Vmware.png",
+      alt: "",
+      width: 60,
+      height: 60,
+    },
+  },
+  {
+    id: 3,
+    animate: animate_LR,
+    imgProps: {
+      src: "/img/home/service/Wacom.png",
+      alt: "",
+      width: 60,
+      height: 60,
+    },
   },
 ]

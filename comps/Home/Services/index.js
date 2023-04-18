@@ -1,17 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-
-import { data1, data2, data3, data4, data5, data6 } from './data';
+import { data1, data2, data3, data4, data5, data6, dataMid } from './data';
 import SpecialBox from "./SpecialBox";
 import Animater from "./Animater";
 
 function Services() {
-  const [selected, setSelected] = useState(-1)
+  const [selected, setSelected] = useState(3)
   const timerRef = useRef()
 
   useEffect(() => {
     timerRef.current = setInterval(() => {
-      setSelected(p => p === 2 ? 0 : p + 1)
+      setSelected(p => p === 3 ? 0 : p + 1)
     }, 3000)
 
     return () => clearInterval(timerRef.current)
@@ -19,7 +17,7 @@ function Services() {
 
   const set = () => {
     timerRef.current = setInterval(() => {
-      setSelected(p => p === 2 ? 0 : p + 1)
+      setSelected(p => p === 3 ? 0 : p + 1)
     }, 3000)
   }
 
@@ -48,16 +46,7 @@ function Services() {
 
         <Animater selected={selected} data={data4} />
         <Animater selected={selected} data={data5} />
-
-        <div className="dc xs:hidden p-2 bg-white rounded-md md:rounded-xl">
-          <Image
-            src="/img/home/service/azure.webp"
-            alt=""
-            width={260}
-            height={40}
-          />
-        </div>
-
+        <Animater selected={selected} data={dataMid} wrapperCls="xs:hidden" />
         <Animater selected={selected} data={data6} wrapperCls="col-span-2" />
       </div>
     </section>
