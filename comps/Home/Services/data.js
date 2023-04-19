@@ -103,7 +103,7 @@ export const data2 = [
       alt: "",
       width: 200,
       height: 90,
-      className: "w-16",
+      className: "w-20 xs:w-24 sm:w-32 md:w-36 mdb:w-40 lg:w-44 xl:w-[200px]",
     },
   },
   {

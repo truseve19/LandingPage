@@ -1,10 +1,4 @@
-import { useState } from "react";
 import Image from "next/image";
-
-const options = [
-  "For Business",
-  "For Enterprises"
-]
 
 const covered = [
   {
@@ -77,9 +71,10 @@ const forBuisness = [
     price: "₹ 111/mo.",
     intro: "Web and mobile apps and services",
     covered: covered.filter((a, i) => i < 8),
+    sub: "",
     points: [
-      "Web and mobile versions of Office apps only",
-      "Chat, call, meet up to 300 attendees ",
+      "Web and mobile versions of Microsoft 365 apps only",
+      "Chat, call, meet up to 300 attendees",
       "1 TB of cloud storage per user",
       "Business-class email",
       "Standard security",
@@ -93,13 +88,12 @@ const forBuisness = [
     price: "₹ 599/mo.",
     intro: "Web and mobile apps and services",
     covered: covered.filter((a, i) => i < 10),
+    sub: <>Everything in Business Basic, <span className="text-xl">+</span></>,
     points: [
-      "Web and mobile versions of Office apps only",
-      "Chat, call, meet up to 300 attendees ",
-      "1 TB of cloud storage per user",
-      "Business-class email",
-      "Standard security",
-      "Anytime phone and web support",
+      "Desktop versions of Microsoft 365 apps with premium features",
+      "Easily host webinars",
+      "Attendee registration and reporting tools",
+      "Manage customer appointments",
     ]
   },
   {
@@ -109,13 +103,11 @@ const forBuisness = [
     price: "₹ 1499/mo.",
     intro: "Web and mobile apps and services",
     covered,
+    sub: <>Everything in Business Standard, <span className="text-xl">+</span></>,
     points: [
-      "Web and mobile versions of Office apps only",
-      "Chat, call, meet up to 300 attendees ",
-      "1 TB of cloud storage per user",
-      "Business-class email",
-      "Standard security",
-      "Anytime phone and web support",
+      "Advanced security",
+      "Access and data control",
+      "Cyberthreat protection",
     ]
   },
 ]
@@ -123,7 +115,7 @@ const forBuisness = [
 function Card({
   title, plan, price,
   intro, points, covered,
-  parentIn,
+  parentIn, sub,
 }) {
   return (
     <div className="flex flex-col bg-white">
@@ -166,10 +158,17 @@ function Card({
 
       <ul className="my-6 px-5">
         {
+          sub &&
+          <li className="mb-1.5 pl-4 lg:pl-7 text-sm font-medium text-[#333]">
+            {sub}
+          </li>
+        }
+
+        {
           points.map((p, i) => (
             <li
               key={i}
-              className="flex gap-2 lg:gap-4 mb-4 text-xs md:text-sm xl:text-base text-[#656565]"
+              className="flex gap-2 lg:gap-4 mb-2 md:mb-4 text-xs md:text-sm xl:text-base text-[#656565]"
             >
               <span className="w-2 h-2 mdb:w-3 mdb:h-3 mt-1 mdb:mt-1.5 shrink-0 border-2 border-primary rounded-full"></span>
               {p}
@@ -185,34 +184,8 @@ function Card({
   )
 }
 
-function Plans() {
-  const [active, setActive] = useState("For Business")
-
-  return (
-    <div className="pt-8 bg-light">
-      <h2 className="py-6 text-2xl md:text-3xl xl:text-[38px] font-bold text-[#202020] text-center">
-        Price Plans
-      </h2>
-
-      <div className="w-fit mb-8 mx-auto py-[3px] px-1.5 bg-[#3C68FF2E] rounded-[5px]">
-        {
-          options.map(o => (
-            <button
-              key={o}
-              onClick={() => setActive(o)}
-              className={`not-theme px-6 py-2 first:mr-1 text-[13px] md:text-[15px] xl:text-[17px] font-medium ${o === active ? "bg-[#3C68FF] text-white" : "text-[#151515D4] hover:bg-[#3C68FF2E]"} rounded-[5px]`}
-            >
-              {o}
-            </button>
-          ))
-        }
-      </div>
-
-      <div className="grid mdb:grid-cols-3 gap-8 justify-center max-w-5xl mx-auto px-6 pb-8">
-        {forBuisness.map((f, i) => <Card {...f} parentIn={i} />)}
-      </div>
-    </div>
-  )
+function Buisness() {
+  return forBuisness.map((f, i) => <Card {...f} parentIn={i} />)
 }
 
-export default Plans
+export default Buisness
