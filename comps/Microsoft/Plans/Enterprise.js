@@ -76,6 +76,7 @@ const covered = [
     id: 4,
     title: "Device and app management",
     para: "Help users be productive wherever they are while keeping corporate information secure. Flexible management and powerful security solutions let you deliver protected mobile experiences on any device.",
+    className: "mdb:min-h-[388px]",
     list: [
       {
         key: 11,
@@ -221,6 +222,7 @@ const covered = [
     id: 9,
     title: "Identity and access management",
     para: "Secure connections between people, devices, apps, and data. Increase your security and productivity with a single, holistic identity solution that gives you flexibility and control.",
+    className: "mdb:min-h-[216px]",
     list: [
       {
         key: 34,
@@ -240,6 +242,7 @@ const covered = [
     id: 10,
     title: "Threat protection",
     para: "Detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and cloud environments. Protect your organization with adaptive, built-in intelligence.",
+    className: "mdb:min-h-[332px]",
     list: [
       {
         key: 37,
@@ -275,6 +278,7 @@ const covered = [
     id: 11,
     title: "Information protection",
     para: "Protect your sensitive data everywhere, even in motion and when shared. Gain visibility and control over how any file is being used with a comprehensive and integrated information protection solution.",
+    className: "mdb:min-h-[300px]",
     list: [
       {
         key: 44,
@@ -348,9 +352,9 @@ const covered = [
 
 function filters(arr = [], exclude = [], listExclude = []) {
   return arr
-    .filter(a => !exclude.includes(a.id))
     .map(a => ({
       ...a,
+      isHidden: exclude.includes(a.id),
       list: a.list.filter(l => !listExclude.includes(l.key))
     }))
 }
@@ -395,13 +399,13 @@ function Card({ title, plan, price, covered }) {
       <div className="grid gap-8 my-6 px-5">
         {
           covered.map(c => (
-            <div key={c.id}>
+            <div key={c.id} className={`${c.className || ""} ${c.isHidden ? "opacity-0" : ""}`}>
               <div className="mb-4 text-center">
                 <p className="text-[13px] md:text-[15px] xl:text-[17px] font-medium">{c.title}</p>
                 <p className="text-[13px] text-[#656565E3]">{c.para}</p>
               </div>
 
-              <div className="dc flex-wrap sm:gap-4 px-4 text-xs font-medium text-[#888585]">
+              <div className="dc flex-wrap sm:gap-4 px-4 text-xs font-medium text-[#605E5E]">
                 {c.list.map(l => (
                   <div
                     key={l.key}
