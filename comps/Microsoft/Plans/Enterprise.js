@@ -1,4 +1,7 @@
+import { useState } from "react";
 import Image from "next/image";
+
+import OrderNow from "../Modals/OrderNow";
 
 const covered = [
   {
@@ -383,7 +386,7 @@ const forEnterprises = [
   },
 ]
 
-function Card({ title, plan, price, covered }) {
+function Card({ title, plan, price, covered, updateModal }) {
   return (
     <div className="flex flex-col max-w-md bg-white">
       <div className="dfc items-center gap-4 p-6 bg-primary text-white rounded-md text-center sticky top-20">
@@ -391,7 +394,10 @@ function Card({ title, plan, price, covered }) {
         <p className="text-lg md:text-xl font-semibold">Enterprise {plan}</p>
         <p className="text-3xl md:text-4xl font-bold">{price}</p>
 
-        <button className="mt-2 text-[13px] md:text-[15px] xl:text-[17px] font-medium bg-[#001252] text-white shadow-[0_4px_4px_0_#00000040]">
+        <button
+          className="mt-2 text-[13px] md:text-[15px] xl:text-[17px] font-medium bg-[#001252] text-white shadow-[0_4px_4px_0_#00000040]"
+          onClick={updateModal}
+        >
           Order Now
         </button>
       </div>
@@ -429,7 +435,10 @@ function Card({ title, plan, price, covered }) {
         }
       </div>
 
-      <button className="block m-auto mb-6 text-xs md:text-sm xl:text-base">
+      <button
+        className="block m-auto mb-6 text-xs md:text-sm xl:text-base"
+        onClick={updateModal}
+      >
         Order Now
       </button>
     </div>
@@ -437,7 +446,31 @@ function Card({ title, plan, price, covered }) {
 }
 
 function Enterprise() {
-  return forEnterprises.map(f => <Card {...f} />)
+  const [modal, setModal] = useState("")
+
+  const updateModal = val => setModal(val)
+  const closeModal = () => setModal("")
+
+  return (
+    <>
+      {
+        forEnterprises.map(f => (
+          <Card
+            {...f}
+            updateModal={() => updateModal(f.plan)}
+          />
+        ))
+      }
+
+      {
+        modal &&
+        <OrderNow
+          isOpen
+          closeModal={closeModal}
+        />
+      }
+    </>
+  )
 }
 
 export default Enterprise

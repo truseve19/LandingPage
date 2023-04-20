@@ -1,4 +1,7 @@
+import { useState } from "react";
 import Image from "next/image";
+
+import OrderNow from "../Modals/OrderNow";
 
 const covered = [
   {
@@ -115,7 +118,7 @@ const forBuisness = [
 function Card({
   title, plan, price,
   intro, points, covered,
-  parentIn, sub,
+  parentIn, sub, updateModal
 }) {
   return (
     <div className="flex flex-col bg-white">
@@ -124,7 +127,10 @@ function Card({
         <p className="text-lg md:text-xl font-semibold">{plan}</p>
         <p className="text-3xl md:text-4xl font-bold">{price}</p>
 
-        <button className="mt-2 text-[13px] md:text-[15px] xl:text-[17px] font-medium bg-[#001252] text-white shadow-[0_4px_4px_0_#00000040]">
+        <button
+          className="mt-2 text-[13px] md:text-[15px] xl:text-[17px] font-medium bg-[#001252] text-white shadow-[0_4px_4px_0_#00000040]"
+          onClick={updateModal}
+        >
           Order Now
         </button>
       </div>
@@ -177,7 +183,10 @@ function Card({
         }
       </ul>
 
-      <button className="block m-auto mb-6 text-xs md:text-sm xl:text-base">
+      <button
+        className="block m-auto mb-6 text-xs md:text-sm xl:text-base"
+        onClick={updateModal}
+      >
         Order Now
       </button>
     </div>
@@ -185,7 +194,32 @@ function Card({
 }
 
 function Buisness() {
-  return forBuisness.map((f, i) => <Card {...f} parentIn={i} />)
+  const [modal, setModal] = useState("")
+
+  const updateModal = val => setModal(val)
+  const closeModal = () => setModal("")
+
+  return (
+    <>
+      {
+        forBuisness.map((f, i) => (
+          <Card
+            {...f}
+            parentIn={i}
+            updateModal={() => updateModal(f.plan)}
+          />
+        ))
+      }
+
+      {
+        modal &&
+        <OrderNow
+          isOpen
+          closeModal={closeModal}
+        />
+      }
+    </>
+  )
 }
 
 export default Buisness

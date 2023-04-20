@@ -40,7 +40,7 @@ function Modal({
               <div className={`max-w-fit xs:min-w-[380px] p-6 mx-4 xs:mx-0 transform bg-white shadow-xl rounded-2xl ${wrapperCls}`}>
                 {
                   needTitleBar &&
-                  <div className="df">
+                  <div className="df text-xl mdb:text-[26px] font-bold text-[#202020]">
                     {title && <h1>{title}</h1>}
 
                     <Close
