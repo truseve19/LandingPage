@@ -1,7 +1,98 @@
 const links = [
   {
     to: "/",
+    name: "hardware",
+    title: "Hardware",
+    list: [
+      {
+        to: "/",
+        title: "Desktop"
+      },
+      {
+        to: "/",
+        title: "Laptops"
+      },
+      {
+        to: "/",
+        title: "Workstation"
+      },
+      {
+        to: "/",
+        title: "Monitors"
+      },
+      {
+        to: "/",
+        title: "Printers"
+      },
+      {
+        to: "/",
+        title: "Scanners"
+      },
+      {
+        to: "/",
+        title: "Plotters"
+      },
+      {
+        to: "/",
+        title: "Speakers"
+      },
+      {
+        to: "/",
+        title: "Webcam"
+      },
+      {
+        to: "/",
+        title: "UPS"
+      },
+    ]
+  },
+  {
+    to: "/",
+    name: "software",
     title: "Software",
+    list: [
+      {
+        to: "/",
+        title: "Email Platform"
+      },
+      {
+        to: "/",
+        title: "Mail Server"
+      },
+      {
+        to: "/",
+        title: "Anti-Virus"
+      },
+      {
+        to: "/",
+        title: "Firewall Licenses"
+      },
+      {
+        to: "/",
+        title: "Pperating System (OS)"
+      },
+      {
+        to: "/",
+        title: "Meeting Platform"
+      },
+      {
+        to: "/",
+        title: "CRM"
+      },
+      {
+        to: "/",
+        title: "Website Development"
+      },
+      {
+        to: "/",
+        title: "Native Application Development"
+      },
+    ]
+  },
+  {
+    to: "/",
+    name: "productivity",
+    title: "Productivity",
     list: [
       {
         to: "/microsoft",
@@ -15,74 +106,100 @@ const links = [
         to: "/",
         title: "Zoho workplace"
       },
-      {
-        to: "/",
-        title: "Antivirus/ Firewall"
-      },
-      {
-        to: "/",
-        title: "Video conferencing kits"
-      }
     ]
   },
   {
     to: "/",
-    title: "Hardware",
+    name: "networking",
+    title: "Networking",
     list: [
       {
         to: "/",
-        title: "Desktop"
+        title: "IP Phones"
       },
       {
         to: "/",
-        title: "Laptop"
+        title: "Wi-fi Routers"
       },
       {
         to: "/",
-        title: "Interactive display Panel"
+        title: "Modem"
       },
       {
         to: "/",
-        title: "Projector"
+        title: "Switches"
       },
       {
         to: "/",
-        title: "Television"
-      },
-      {
-        to: "/",
-        title: "Printer"
-      },
-      {
-        to: "/",
-        title: "Speaker"
-      },
-      {
-        to: "/",
-        title: "Biometric Device"
+        title: "LAN Connectivity"
       },
     ]
   },
   {
     to: "/",
-    title: "Cloud services",
+    name: "storage",
+    title: "Storage & Data Center",
     list: [
       {
         to: "/",
-        title: "AWS"
+        title: "On Permises Server"
       },
       {
         to: "/",
-        title: "Google cloud"
+        title: "Cloud Server"
       },
       {
         to: "/",
-        title: "Microsoft azure"
+        title: "Pen Drive"
+      },
+      {
+        to: "/",
+        title: "Memory Card"
+      },
+      {
+        to: "/",
+        title: "Hard Disk Drive (HDD)"
+      },
+      {
+        to: "/",
+        title: "Solid State Drive (SSD)"
       },
     ]
   },
   {
     to: "/",
+    name: "security",
+    title: "Security",
+    list: [
+      {
+        to: "/",
+        title: "CCTV"
+      },
+      {
+        to: "/",
+        title: "Bio Metrics"
+      },
+      {
+        to: "/",
+        title: "Automatic Sensors"
+      },
+      {
+        to: "/",
+        title: "Barcode Devices"
+      },
+      {
+        to: "/",
+        title: "Point of Sale Machine"
+      },
+      {
+        to: "/",
+        title: "Attendance Machine"
+      },
+    ]
+  },
+  {
+    to: "/",
+    name: "speciality",
     title: "Speciality products",
     list: [
       {
@@ -90,8 +207,36 @@ const links = [
         title: "AR & VR Headsets"
       },
       {
+        to: "/Hololens",
+        title: ""
+      },
+      {
         to: "/",
         title: "Drones"
+      },
+      {
+        to: "/",
+        title: "Video Conferencing Kits"
+      },
+      {
+        to: "/",
+        title: "Smart Board"
+      },
+      {
+        to: "/",
+        title: "Interactive Display Panel"
+      },
+      {
+        to: "/",
+        title: "Television"
+      },
+      {
+        to: "/",
+        title: "Paper Shedder"
+      },
+      {
+        to: "/",
+        title: "Mobiles"
       },
     ]
   },

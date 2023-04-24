@@ -3,7 +3,7 @@ import Cloud from "../../svg/cloud.svg";
 
 function ApplicationForm() {
   return (
-    <section className="bg-[#EFF1F6] relative isolate">
+    <section id="contact-form" className="bg-[#EFF1F6] relative isolate">
       <div className="contact-form-divider-bg absolute inset-0 -z-10"></div>
 
       <Circle className="absolute top-1/2 left-0 z-[1]" />

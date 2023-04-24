@@ -86,7 +86,7 @@ function Migration() {
                 onClick={() => createNewTimer(d.id)}
                 key={d.id}
               >
-                <strong className="text-sm md:text-base lg:text-lg xl:text-[22px] font-semibold">{d.title}</strong>
+                <h3 className="text-sm md:text-base lg:text-lg xl:text-[22px] font-semibold">{d.title}</h3>
                 {d.id === active && <p className="my-2 text-xs md:text-sm lg:text-base xl:text-lg text-[#6C6C6C]">{d.desc}</p>}
               </div>
             ))

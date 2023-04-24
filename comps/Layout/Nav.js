@@ -47,7 +47,7 @@ function Nav() {
               links.map(l => (
                 <div
                   key={l.title}
-                  className="max-lg:mb-2"
+                  className={`max-lg:mb-2 grid-${l.name} break-inside-avoid`}
                 >
                   <Link
                     href={l.to}
@@ -83,7 +83,7 @@ function Nav() {
         </Link>
 
         <Link
-          href=""
+          href="/#contact-form"
           className="block py-1 max-lg:px-1.5 shrink-0 text-[#191c1f] hover:text-primary"
           onClick={() => setOpen(false)}
         >

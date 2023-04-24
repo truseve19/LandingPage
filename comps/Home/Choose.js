@@ -77,9 +77,9 @@ function Choose() {
                   className="w-6 md:w-8 lg:w-9"
                 />
 
-                <strong className="text-sm md:text-base lg:text-lg xl:text-[22px] font-semibold text-[#202020]">
+                <h3 className="text-sm md:text-base lg:text-lg xl:text-[22px] font-semibold text-[#202020]">
                   {d.title}
-                </strong>
+                </h3>
               </div>
 
               <div className="text-xs md:text-sm lg:text-base xl:text-lg text-[#6C6C6C]">
