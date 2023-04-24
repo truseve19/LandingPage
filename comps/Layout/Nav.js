@@ -42,17 +42,17 @@ function Nav() {
             Product & Solution
           </button>
 
-          <div className="nav-products">
+          <div className="nav-products mini-scroll-bar max-h-[80vh] overflow-y-auto">
             {
               links.map(l => (
                 <div
                   key={l.title}
-                  className={`max-lg:mb-2 grid-${l.name} break-inside-avoid`}
+                  className={`max-lg:mb-2 ${l.title === "Productivity" ? "lg:pb-6" : ""} break-inside-avoid`}
                 >
                   <Link
                     href={l.to}
                     onClick={() => setOpen(false)}
-                    className="df mb-2 md:mb-4 font-semibold text-[#010101] hover:text-primary cursor-pointer"
+                    className="df mb-2 md:mb-4 lg:px-1 font-semibold text-[#010101] hover:text-primary cursor-pointer"
                   >
                     {l.title}
                   </Link>
@@ -65,7 +65,7 @@ function Nav() {
                       onClick={() => setOpen(false)}
                     >
                       {a.title}
-                      <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block" />
+                      <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block shrink-0" />
                     </Link>
                   ))}
                 </div>

@@ -1,7 +1,6 @@
 const links = [
   {
     to: "/",
-    name: "hardware",
     title: "Hardware",
     list: [
       {
@@ -48,7 +47,6 @@ const links = [
   },
   {
     to: "/",
-    name: "software",
     title: "Software",
     list: [
       {
@@ -91,7 +89,6 @@ const links = [
   },
   {
     to: "/",
-    name: "productivity",
     title: "Productivity",
     list: [
       {
@@ -110,7 +107,6 @@ const links = [
   },
   {
     to: "/",
-    name: "networking",
     title: "Networking",
     list: [
       {
@@ -137,7 +133,6 @@ const links = [
   },
   {
     to: "/",
-    name: "storage",
     title: "Storage & Data Center",
     list: [
       {
@@ -168,7 +163,6 @@ const links = [
   },
   {
     to: "/",
-    name: "security",
     title: "Security",
     list: [
       {
@@ -199,7 +193,6 @@ const links = [
   },
   {
     to: "/",
-    name: "speciality",
     title: "Speciality products",
     list: [
       {
@@ -207,8 +200,8 @@ const links = [
         title: "AR & VR Headsets"
       },
       {
-        to: "/Hololens",
-        title: ""
+        to: "/",
+        title: "Hololens"
       },
       {
         to: "/",

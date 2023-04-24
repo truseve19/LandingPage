@@ -76,6 +76,11 @@
     @apply flex items-center justify-center gap-2;
   }
 
+  .mini-scroll-bar::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
   .theme-h1 {
     @apply text-3xl md:text-4xl lg:text-5xl xl:text-[55px] xl:leading-[1.2] font-bold;
   }
@@ -126,9 +131,8 @@ nav {
   @apply 
     lg:animate-enter-opacity 
     absolute top-[70px] max-sm:inset-x-4 max-lg:inset-x-6 lg:top-[60px] xl:top-16 lg:left-1/2 lg:-translate-x-1/2 
-    min-[360px]:grid min-[360px]:grid-cols-2 sm:grid-cols-3
-    md:grid-cols-4 lg:hidden group-hover:lg:grid 
-    lg:grid-cols-6 lg:grid-rows-2
+    grid min-[360px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 
+    lg:hidden group-hover:lg:block
     lg:p-6 lg:rounded-xl lg:shadow-md
     lg:bg-[#F9F9F9] 
   ;
@@ -200,37 +204,7 @@ nav {
 
 @media (min-width: 1024px) {
   .nav-products {
-    grid-template-areas: 
-      "grid-hardware grid-software grid-productivity grid-storage grid-security grid-speciality"
-      "grid-hardware grid-software grid-networking   grid-storage grid-security grid-speciality"
-    ;
-    width: clamp(800px, 75%, 1100px);
-  }
-  .grid-hardware {
-    grid-area: grid-hardware;
-  }
-
-  .grid-software {
-    grid-area: grid-software;
-  }
-
-  .grid-productivity {
-    grid-area: grid-productivity;
-  }
-
-  .grid-networking {
-    grid-area: grid-networking;
-  }
-
-  .grid-storage {
-    grid-area: grid-storage;
-  }
-
-  .grid-security {
-    grid-area: grid-security;
-  }
-
-  .grid-speciality {
-    grid-area: grid-speciality;
+    @apply columns-6;
+    width: clamp(900px, 80%, 1100px);
   }
 }
