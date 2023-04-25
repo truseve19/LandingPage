@@ -466,6 +466,8 @@ function Enterprise() {
         modal &&
         <OrderNow
           isOpen
+          type="enterprise"
+          selected={modal}
           closeModal={closeModal}
         />
       }

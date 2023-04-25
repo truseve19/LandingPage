@@ -61,6 +61,11 @@
   label {
     @apply block mb-1;
   }
+  select {
+    @apply pl-4 pr-8 py-2 appearance-none bg-no-repeat bg-[url('/img/dropdown-arrow.png')];
+    background-position: 98%;
+    background-size: 24px;
+  }
 
   section {
     @apply px-4 py-8 sm:py-12 mdb:py-16 lg:px-6 xl:py-20;

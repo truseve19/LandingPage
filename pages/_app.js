@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { usermavenClient } from "@usermaven/sdk-js";
 import { ToastContainer } from 'react-toastify';
 import Script from 'next/script';
+import Image from "next/image";
 import Head from "next/head";
 
 import Footer from '../comps/Layout/Footer';
@@ -53,6 +54,24 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
       <ToastContainer limit={2} />
+
+      <div
+        className="flex items-center fixed bottom-4 right-4 sm:bottom-8 sm:right-8 shadow-sm z-40 cursor-pointer"
+        onClick={() => window.open("https://wa.me/message/N3B5R2A3O5HFG1", "_blank")}
+      >
+        <Image
+          src="/img/WhatsApp.webp"
+          alt=""
+          width={58}
+          height={58}
+          className="sm:absolute sm:top-1/2 sm:-left-8 sm:-translate-y-1/2"
+        />
+
+        <div className="hidden sm:block pl-6 pr-4 py-1 bg-[#42c454] text-white text-center rounded-full">
+          <p className="text-xs font-medium">Whatsapp</p>
+          <p className="text-xs">Click to chat</p>
+        </div>
+      </div>
     </>
   )
 }

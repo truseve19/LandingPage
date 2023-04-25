@@ -215,6 +215,8 @@ function Buisness() {
         modal &&
         <OrderNow
           isOpen
+          type="buisness"
+          selected={modal}
           closeModal={closeModal}
         />
       }
