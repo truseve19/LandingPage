@@ -29,7 +29,7 @@ const list = [
     }
   },
   {
-    label: "Domain/Website url",
+    label: "Domain/Website URL",
     name: "Domain",
   },
 ]
@@ -111,14 +111,14 @@ function OrderNow({ isOpen, type, selected = "", closeModal }) {
 
           <div>
             <label htmlFor="order-interested" className="text-[15px] font-medium text-[#6B6B6BC9]">
-              Interested product
+              Interested Product
             </label>
 
             <select
               id="order-interested"
               className="border border-[#B9B0B05C] rounded-[10px]"
               {...register("Interested_product", {
-                required: "Interested product is required"
+                required: "Interested Product is required"
               })}
             >
               {

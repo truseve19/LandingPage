@@ -39,7 +39,7 @@ function Nav() {
           <button
             className="not-theme text-[#191c1f] lg:hover:text-primary max-lg:py-1 max-lg:px-1.5 max-lg:bg-white lg:py-1"
           >
-            Product & Solution
+            Products & Solutions
           </button>
 
           <div className="nav-products mini-scroll-bar max-h-[80vh] overflow-y-auto">

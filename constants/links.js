@@ -19,15 +19,14 @@ const links = [
     to: "/",
     title: "Software",
     list: [
-      "Email Platform",
-      "Mail Server",
-      "Anti-Virus",
-      "Firewall Licenses",
-      "Operating System (OS)",
-      "Meeting Platform",
       "CRM",
+      "SAP",
+      "Email Platform",
+      "Meeting Platform",
       "Website Development",
       "Native Application Development",
+      "Anti-Virus",
+      "Firewall Licenses",
     ]
   },
   {
@@ -40,11 +39,11 @@ const links = [
       },
       {
         to: "/",
-        title: "Google workspace"
+        title: "Google Workspace"
       },
       {
         to: "/",
-        title: "Zoho workplace"
+        title: "Zoho Workplace"
       },
     ]
   },
@@ -53,7 +52,7 @@ const links = [
     title: "Networking",
     list: [
       "IP Phones",
-      "Wi-fi Routers",
+      "Wi-Fi Routers",
       "Modem",
       "Switches",
       "LAN Connectivity",
@@ -65,10 +64,10 @@ const links = [
     list: [
       "On Permises Server",
       "Cloud Server",
-      "Pen Drive",
-      "Memory Card",
       "Hard Disk Drive (HDD)",
       "Solid State Drive (SSD)",
+      "Pen Drive",
+      "Memory Card",
     ]
   },
   {
@@ -79,19 +78,19 @@ const links = [
       "Bio Metrics",
       "Automatic Sensors",
       "Barcode Devices",
-      "Point of Sale Machine",
+      "PoS Machine",
       "Attendance Machine",
     ]
   },
   {
     to: "/",
-    title: "Speciality products",
+    title: "Speciality Products",
     list: [
       "AR & VR Headsets",
       "Hololens",
       "Drones",
       "Video Conferencing Kits",
-      "Smart Board",
+      "Smart Digital Board",
       "Interactive Display Panel",
       "Television",
       "Paper Shedder",

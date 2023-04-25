@@ -54,8 +54,8 @@ const list = [
   },
   {
     title: <>
-      <p className="xs:hidden">Enterprise & Team</p>
-      <p className="hidden xs:block">Enterprise & Team collaboration</p>
+      <p className="xs:hidden">Enterprises & Team</p>
+      <p className="hidden xs:block">Enterprises & Team collaboration</p>
     </>,
     wrapperCls: "w-full",
     titleClass: "right-8",
@@ -186,7 +186,7 @@ const list = [
     ]
   },
   {
-    title: "Small Business",
+    title: "Business",
     wrapperCls: "w-1/4",
     titleClass: middle,
     list: [
@@ -261,7 +261,7 @@ function Service() {
       </h2>
 
       <div className="mb-12 text-[13px] md:text-[15px] xl:text-[17px] font-medium text-[#040404] text-center">
-        Our team helps you select the most suitable MS365 plan for your business needs, ensuring a seamless and <br className="hidden md:block" />
+        Our team helps you select the most suitable M365 plan for your business needs, ensuring a seamless and <br className="hidden md:block" />
         effortless onboarding experience.
       </div>
 

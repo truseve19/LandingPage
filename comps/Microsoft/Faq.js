@@ -5,7 +5,7 @@ const data = [
   {
     key: "1",
     quest: "What exactly is Microsoft 365?",
-    ans: "Microsoft 365 is a complete productivity platform that can help you and your team work more productively whether you're at home, on the move, or in the office thanks to its powerful Office programs, cutting-edge security features, and intelligent cloud services.",
+    ans: "Microsoft 365 is a complete productivity platform that can help you and your team work more productively whether you're at home, on the move, or in the office thanks to its powerful Office programs, cutting-edge security features, and intelligent Cloud services.",
   },
   {
     key: "2",
@@ -33,17 +33,17 @@ const data = [
   {
     key: "4",
     quest: "How many devices can I install the Office apps on?",
-    ans: "To get the most out of microsoft office, you can install it on up to five devices (PCs or Macs, tablets, and smartphones).",
+    ans: "To get the most out of Microsoft Office, you can install it on up to five devices (PCs or Macs, Tablets, and Smartphones).",
   },
   {
     key: "5",
     quest: "What is the maximum number of users that can attend a Microsoft Teams meeting?",
-    ans: "You can invite up to 1,000 internal or external people to join a meeting from computers, laptops, tablets, and smartphones, allowing for chat, audio, and video interaction. Add 10,000 view-only attendees for larger meetings.",
+    ans: "You can invite up to 1,000 internal or external people to join a meeting from Computers, Laptops, Tablets, and Smartphones, allowing for chat, audio, and video interaction. Add 10,000 view-only attendees for larger meetings.",
   },
   {
     key: "6",
     quest: "What forms of payments are accepted?",
-    ans: "Depending on the services you select, you can choose to be billed monthly or annually, and all major credit cards, Bank transfers - IMPS, NEFT, RTGS are accepted for payment.",
+    ans: "Depending on the services you select, you can choose to be billed Monthly or Annually, and all major debit cards and credit cards, Bank transfers - IMPS, NEFT, RTGS are accepted for payment.",
   },
   {
     key: "7",
@@ -53,7 +53,7 @@ const data = [
   {
     key: "8",
     quest: "What happens to the information I store in my Microsoft 365 account?",
-    ans: "Your data is yours. If you decide to cancel your Microsoft 365 subscription, you can download your data—for example, your email and documents on team sites—and save it to another location. You should save your data before you cancel. After you cancel your subscription, data associated with your Microsoft 365 account will be available to your administrator(s) in a limited function account for 90 days."
+    ans: "Your data is yours. If you decide to cancel your Microsoft 365 subscription, you can download your data for example, your email and documents on team sites and save it to another location. You should save your data before you cancel. After you cancel your subscription, data associated with your Microsoft 365 account will be available to your administrator(s) in a limited function account for 90 days."
   },
   {
     key: "9",

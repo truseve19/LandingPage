@@ -128,7 +128,7 @@ function ApplicationForm() {
           className="block mt-6 mb-2 text-[#837F7F]"
           htmlFor="contact-form-interested"
         >
-          Interested product
+          Interested Product
         </label>
 
         <input
@@ -136,7 +136,7 @@ function ApplicationForm() {
           type="text"
           className="bg-[#F0F3F4] rounded shadow-[inset_0_4px_4px_rgba(0,0,0,0.01)]"
           {...register("Interested_product", {
-            required: "Interested product is required"
+            required: "Interested Product is required"
           })}
         />
 

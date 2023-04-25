@@ -12,7 +12,7 @@ const data = [
         from: "BHEL",
         name: "Peter Parker",
         role: "CEO",
-        comment: '“Truseve” is the most effective platform to handle the cloud and access to various tools.',
+        comment: '“Truseve” is the most effective platform to handle the Cloud and access to various tools.',
       },
       {
         key: "4",
@@ -20,7 +20,7 @@ const data = [
         from: "BHEL",
         name: "Peter Parker",
         role: "CEO",
-        comment: '“Truseve” is the most effective platform to handle the cloud and access to various tools. “Truseve” platform to handle the cloud and access to various tools.',
+        comment: '“Truseve” is the most effective platform to handle the Cloud and access to various tools. “Truseve” platform to handle the Cloud and access to various tools.',
       },
     ]
   },
@@ -33,7 +33,7 @@ const data = [
         from: "BHEL",
         name: "Peter Parker",
         role: "CEO",
-        comment: '“Truseve” is the most effective platform to handle the cloud and access to various tools. They are rated 5 stars by me, coz of the excellent service provided by them, most trusted platform to buy microsoft and other main stream applications.',
+        comment: '“Truseve” is the most effective platform to handle the Cloud and access to various tools. They are rated 5 stars by me, coz of the excellent service provided by them, most trusted platform to buy microsoft and other main stream applications.',
       },
       {
         key: "5",
@@ -41,7 +41,7 @@ const data = [
         from: "BHEL",
         name: "Peter Parker",
         role: "CEO",
-        comment: '“Truseve” is the most effective platform to handle the cloud and access to various tools. “Truseve” platform to handle the cloud.',
+        comment: '“Truseve” is the most effective platform to handle the Cloud and access to various tools. “Truseve” platform to handle the Cloud.',
       },
     ]
   },

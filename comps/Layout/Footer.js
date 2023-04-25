@@ -7,28 +7,28 @@ function Footer() {
       <div className="flex flex-wrap justify-between gap-4 md:gap-8 max-w-6xl mx-auto">
         <div>
           <p className="mb-2 cursor-pointer">
-            Software
-          </p>
-          <p className="mb-2 cursor-pointer">
             Hardware
           </p>
           <p className="mb-2 cursor-pointer">
-            Storage & data center
+            Software
           </p>
           <p className="mb-2 cursor-pointer">
             Productivity
+          </p>
+          <p className="mb-2 cursor-pointer">
+            Networking
           </p>
         </div>
 
         <div>
           <p className="mb-2 cursor-pointer">
-            Networking
+            Storage & Data center
           </p>
           <p className="mb-2 cursor-pointer">
             Security
           </p>
           <p className="mb-2 cursor-pointer">
-            Other products
+            Speciality Products
           </p>
         </div>
 
@@ -39,8 +39,8 @@ function Footer() {
 
         <div>
           <div className="mb-4">
-            <strong>Truseve Enterprises Private limited,</strong> <br />
-            No. 5, 2nd Floor, Reach It Asia, 1st Street, <br />
+            <strong>Truseve Enterprises Private Limited,</strong> <br />
+            No. 5, 2nd Floor, REACH IT ASIA, 1st Street, <br />
             Cenotaph Road, Teynampet, Chennai - 600018
           </div>
           <div className="df gap-4 flex-wrap">

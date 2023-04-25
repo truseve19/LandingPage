@@ -118,7 +118,7 @@ function ConnectUs({ isOpen, closeModal }) {
 
         <div className="mb-8">
           <label htmlFor="connect-us-interested" className="text-[15px] font-medium text-[#6B6B6BC9]">
-            Interested product
+            Interested Product
           </label>
 
           <input
@@ -126,7 +126,7 @@ function ConnectUs({ isOpen, closeModal }) {
             type="text"
             className="border border-[#B9B0B05C] rounded-[10px]"
             {...register("Interested_product", {
-              required: "Interested product is required"
+              required: "Interested Product is required"
             })}
           />
 

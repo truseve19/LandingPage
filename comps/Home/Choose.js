@@ -10,14 +10,14 @@ const data = [
   {
     id: "2",
     img: "/img/home/choose/fullday.png",
-    title: "24x7 Technical support",
+    title: "24x7 Technical Support",
     desc: "We're here for you, around the clock, for all your support needs. From answering basic questions to on-demand premises support, we've got you covered, 24/7.",
   },
   {
     id: "3",
     img: "/img/home/choose/microsoft.png",
-    title: "Trusted partner",
-    desc: "We are a trusted partner to many high-level companies, providing comprehensive software and hardware solutions to businesses of all sizes.",
+    title: "Trusted Partner",
+    desc: "We are a trusted partner to many high-level companies, providing comprehensive Software and Hardware solutions to businesses of all sizes.",
   },
   {
     id: "4",
@@ -29,12 +29,12 @@ const data = [
     id: "5",
     img: "/img/home/choose/customised.png",
     title: "Affordable Hardware Solutions",
-    desc: "From startups to enterprises, we offer customized hardware solutions that cover everything like desktop, laptop, servers  and also support server management and data backup.",
+    desc: "From startups to enterprises, we offer customized Hardware solutions that cover everything like Desktop, Laptop, Servers and also support Server management and Data backup.",
   },
   {
     id: "6",
     img: "/img/home/choose/setup.png",
-    title: "Setup and deployment support",
+    title: "Setup and Deployment Support",
     desc: "You can leave the setup and configuration to our experts, they will tailor your infrastructure to your needs, making the transition process faster and more efficient.",
   },
 ]
@@ -60,7 +60,7 @@ function Choose() {
 
       <div className="mt-12 md:mt-8 lg:mt-14 mb-4 md:mb-8 lg:mb-12 sticky top-0 z-[1]">
         <h2 className="theme-h2 mb-2 text-[#202020]">
-          Why choose truseve for your IT solutions
+          Why choose Truseve for your IT solutions
         </h2>
       </div>
 

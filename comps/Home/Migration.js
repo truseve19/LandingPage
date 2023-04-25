@@ -6,17 +6,17 @@ const data = [
   {
     id: 1,
     title: "Email Migration",
-    desc: "Email migration made hassle-free by providing expert services that ensure seamless transfer of email data between platforms. Our team guarantees a smooth transition with minimum downtime, making it stress-free for both individuals and businesses.",
+    desc: "Email migration made hassle-free by providing expert services that ensure seamless transfer of email data between platforms. Our team guarantees a smooth transition with minimum downtime, making it stress-free for both Individuals and Businesses.",
   },
   {
     id: 2,
     title: "Cloud Migration",
-    desc: "Truseve offers customized cloud migration services for seamless transition to cloud environment, including data and application migration, and optimizing performance, security, and scalability.",
+    desc: "Truseve offers customized Cloud migration services for seamless transition to Cloud environment, including data and application migration, and optimizing performance, security, and scalability.",
   },
   {
     id: 3,
     title: "On-Premises to Cloud Migration",
-    desc: "Are you tired of managing your on-premises software? Truseve can help you migrate to a cloud-based platform seamlessly. Our expert team ensures a hassle-free transition.",
+    desc: "Are you tired of managing your on-premises Software? Truseve can help you migrate to a Cloud-based platform seamlessly. Our expert team ensures a hassle-free transition.",
   },
 ]
 

@@ -244,7 +244,7 @@ const covered = [
   {
     id: 10,
     title: "Threat protection",
-    para: "Detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and cloud environments. Protect your organization with adaptive, built-in intelligence.",
+    para: "Detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and Cloud environments. Protect your organization with adaptive, built-in intelligence.",
     className: "mdb:min-h-[332px]",
     list: [
       {
@@ -308,7 +308,7 @@ const covered = [
   {
     id: 12,
     title: "Security management",
-    para: "Gain visibility into your cloud apps and services, build insights with sophisticated analytics, and control how your data travels so you can respond to and combat cyberthreats.",
+    para: "Gain visibility into your Cloud apps and services, build insights with sophisticated analytics, and control how your data travels so you can respond to and combat cyberthreats.",
     list: [
       {
         key: 49,

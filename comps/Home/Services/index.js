@@ -30,7 +30,7 @@ function Services() {
       />
 
       <h2 className="theme-h2 mt-2 md:mt-6 lg:mt-12 mb-4 md:mb-8 lg:mb-12">
-        Our key services
+        Our Technology Partners
       </h2>
 
       <div
