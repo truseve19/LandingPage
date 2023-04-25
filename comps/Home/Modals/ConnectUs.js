@@ -1,6 +1,8 @@
 import { useForm } from 'react-hook-form';
 import Image from "next/image";
 
+import { successNotify } from '../../../helper/toastify';
+
 import Modal from "../../UIComp/Modal";
 
 function ConnectUs({ isOpen, closeModal }) {
@@ -13,7 +15,7 @@ function ConnectUs({ isOpen, closeModal }) {
     }
   })
 
-  const onSubmit = async data => {
+  const onSubmit = async fields => {
     try {
       await fetch("https://api.airtable.com/v0/app6UE6RbpyjRUCFk/ConnectUs", {
         method: "POST",
@@ -22,10 +24,11 @@ function ConnectUs({ isOpen, closeModal }) {
           'Authorization': "Bearer patI8oA02uZF2km4I.a28ee2c5d66b575c1929f22937f23a679af04928561d4235180a1a0287b2d5ce"
         },
         body: JSON.stringify({
-          records: [{ fields: data }]
+          records: [{ fields }]
         })
       })
 
+      successNotify("We will contact you shortly")
       closeModal()
 
     } catch (error) {
@@ -60,10 +63,9 @@ function ConnectUs({ isOpen, closeModal }) {
           </label>
 
           <input
-            className="border border-[#B9B0B05C] rounded-[10px]"
             type="text"
-            name=""
             id="connect-us-name"
+            className="border border-[#B9B0B05C] rounded-[10px]"
             {...register("Name", {
               required: "Name is required"
             })}
@@ -79,14 +81,13 @@ function ConnectUs({ isOpen, closeModal }) {
 
         <div className="mb-4">
           <label htmlFor="connect-us-email" className="text-[15px] font-medium text-[#6B6B6BC9]">
-            Business email
+            Email
           </label>
 
           <input
-            className="border border-[#B9B0B05C] rounded-[10px]"
-            type="email"
-            name=""
             id="connect-us-email"
+            type="email"
+            className="border border-[#B9B0B05C] rounded-[10px]"
             {...register("Email", {
               required: "Email is required",
               pattern: {
@@ -109,10 +110,9 @@ function ConnectUs({ isOpen, closeModal }) {
           </label>
 
           <input
-            className="border border-[#B9B0B05C] rounded-[10px]"
             type="text"
-            name=""
             id="connect-us-mobile"
+            className="border border-[#B9B0B05C] rounded-[10px]"
             {...register("Phone")}
           />
         </div>
@@ -123,10 +123,9 @@ function ConnectUs({ isOpen, closeModal }) {
           </label>
 
           <input
-            className="border border-[#B9B0B05C] rounded-[10px]"
-            type="text"
-            name=""
             id="connect-us-interested"
+            type="text"
+            className="border border-[#B9B0B05C] rounded-[10px]"
             {...register("Interested_product", {
               required: "Interested product is required"
             })}

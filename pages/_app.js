@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { useRouter } from 'next/router';
 import { usermavenClient } from "@usermaven/sdk-js";
+import { ToastContainer } from 'react-toastify';
 import Script from 'next/script';
 import Head from "next/head";
 
 import Footer from '../comps/Layout/Footer';
 import Nav from '../comps/Layout/Nav';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -50,6 +52,7 @@ function MyApp({ Component, pageProps }) {
       <Nav />
       <Component {...pageProps} />
       <Footer />
+      <ToastContainer limit={2} />
     </>
   )
 }

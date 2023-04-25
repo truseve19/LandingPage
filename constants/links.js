@@ -67,7 +67,7 @@ const links = [
       },
       {
         to: "/",
-        title: "Pperating System (OS)"
+        title: "Operating System (OS)"
       },
       {
         to: "/",
