@@ -1,10 +1,13 @@
 import { useEffect } from "react";
-import { useRouter } from 'next/router';
+import { DefaultSeo, LogoJsonLd } from 'next-seo';
 import { usermavenClient } from "@usermaven/sdk-js";
 import { ToastContainer } from 'react-toastify';
+import { useRouter } from 'next/router';
 import Script from 'next/script';
 import Image from "next/image";
 import Head from "next/head";
+
+import defaultSeo from '../next-seo.config';
 
 import Footer from '../comps/Layout/Footer';
 import Nav from '../comps/Layout/Nav';
@@ -36,8 +39,23 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Truseve</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width"
+        />
+        <meta
+          property="og:image"
+          content="/img/truseve-logo.png"
+        />
       </Head>
+
+      <DefaultSeo {...defaultSeo} />
+      <LogoJsonLd
+        type="Organization"
+        url="https://www.truseve.com"
+        logo="https://www.truseve.com/img/truseve-logo.png"
+      />
 
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6F8YREHTSD"

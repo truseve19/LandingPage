@@ -9,33 +9,56 @@ const data = [
   },
   {
     key: "2",
+    quest: "What’s the difference between monthly, annual & annual commitment payment ?",
+    ans: <>
+      <p className='mb-2'>To provide you with the greatest amount of flexibility, different payment options are available.</p>
+
+      <p className='mb-1'>Microsoft 365 Business Basic, Apps for business, Business Standard, and Business Premium plans are available for monthly commitment payment or annual commitment payment.</p>
+      <ul className='mb-2 pl-8 list-outside list-disc'>
+        <li><strong className='font-medium'>Monthly commitment payment:</strong> Pay month by month and cancel at any time.</li>
+        <li><strong className='font-medium'>Annual commitment payment:</strong> Sign up for a one-year subscription and benefit from a discount for using this payment option. By default, your billing plan will be set to monthly billing. After your purchase, you can change your billing plan to annual billing within the Admin Portal.</li>
+      </ul>
+
+      <p>The Microsoft 365 Enterprise and Office 365 Enterprise plans (including standalone plans such as Exchange Online) and Microsoft 365 Apps for enterprise are available for annual commitment payment.</p>
+      <ul className='pl-8 list-outside list-disc'>
+        <li><strong className='font-medium'>Annual commitment payment:</strong> Sign up for a one-year subscription and choose to pay monthly or for the entire year at the time you sign up.</li>
+      </ul>
+    </>,
+  },
+  {
+    key: "3",
     quest: "Does Microsoft 365 require an internet connection to use?",
     ans: "Office applications like Word, Excel, PowerPoint, and Outlook can be downloaded and used offline on any device. When online, OneDrive instantly syncs any changes you make. As a result, you can view your documents from any OneDrive-enabled device, even when no internet connection is available. You can manage your email, appointments, meetings, and tasks using Outlook. Your Outlook inbox and outbox will sync with offline modifications.",
   },
   {
-    key: "3",
+    key: "4",
     quest: "How many devices can I install the Office apps on?",
     ans: "To get the most out of microsoft office, you can install it on up to five devices (PCs or Macs, tablets, and smartphones).",
   },
   {
-    key: "4",
+    key: "5",
     quest: "What is the maximum number of users that can attend a Microsoft Teams meeting?",
     ans: "You can invite up to 1,000 internal or external people to join a meeting from computers, laptops, tablets, and smartphones, allowing for chat, audio, and video interaction. Add 10,000 view-only attendees for larger meetings.",
   },
   {
-    key: "5",
-    quest: "What forms of payments are accepted?",
-    ans: "Depending on the services you select, you can choose to be billed monthly or annually, and all major credit cards are accepted for payment.",
-  },
-  {
     key: "6",
-    quest: "Is it possible to cancel my subscription? What happens to the information I store in my Microsoft 365 account?",
-    ans: "Subscriptions may be cancelled within 7 days of purchase for a pro-rata refund, minus a cancellation fee of Rs. 100.",
+    quest: "What forms of payments are accepted?",
+    ans: "Depending on the services you select, you can choose to be billed monthly or annually, and all major credit cards, Bank transfers - IMPS, NEFT, RTGS are accepted for payment.",
   },
   {
     key: "7",
+    quest: "Is it possible to cancel my subscription?",
+    ans: "Subscriptions may be cancelled within 7 days of purchase for a pro-rata refund, minus a cancellation fee of Rs. 100.",
+  },
+  {
+    key: "8",
+    quest: "What happens to the information I store in my Microsoft 365 account?",
+    ans: "Your data is yours. If you decide to cancel your Microsoft 365 subscription, you can download your data—for example, your email and documents on team sites—and save it to another location. You should save your data before you cancel. After you cancel your subscription, data associated with your Microsoft 365 account will be available to your administrator(s) in a limited function account for 90 days."
+  },
+  {
+    key: "9",
     quest: "How long does the Microsoft 365 free trial last?",
-    ans: "Microsoft provides a 30-day free trial on selected SKUs, and we will assist you in determining which SKU is best for you.",
+    ans: "Microsoft provides a 30-day free trial on selected SKUs, and we will assist you in determining which SKU is best for you."
   },
 ]
 
