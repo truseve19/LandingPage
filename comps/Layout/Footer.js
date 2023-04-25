@@ -15,6 +15,9 @@ function Footer() {
           <p className="mb-2 cursor-pointer">
             Storage & data center
           </p>
+          <p className="mb-2 cursor-pointer">
+            Productivity
+          </p>
         </div>
 
         <div>

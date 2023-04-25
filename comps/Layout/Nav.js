@@ -57,17 +57,30 @@ function Nav() {
                     {l.title}
                   </Link>
 
-                  {l.list.map(a => (
-                    <Link
-                      key={a.title}
-                      href={a.to}
-                      className="df lg:px-1 lg:p-0.5 lg:mr-1.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink"
-                      onClick={() => setOpen(false)}
-                    >
-                      {a.title}
-                      <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block shrink-0" />
-                    </Link>
-                  ))}
+                  {l.list.map(a => {
+                    if (typeof a === "string") {
+                      return (
+                        <p
+                          key={a}
+                          className="df lg:px-1 lg:p-0.5 lg:mr-1.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62]"
+                        >
+                          {a}
+                        </p>
+                      )
+                    }
+
+                    return (
+                      <Link
+                        key={a.title}
+                        href={a.to}
+                        className="df lg:px-1 lg:p-0.5 lg:mr-1.5 mb-2 text-[13px] xl:text-[15px] text-[#525A62] hover:text-primary hover:bg-[rgba(62,99,235,.1)] group/navlink"
+                        onClick={() => setOpen(false)}
+                      >
+                        {a.title}
+                        <RightArrow className="w-5 h-5 ml-auto hidden group-hover/navlink:block shrink-0" />
+                      </Link>
+                    )
+                  })}
                 </div>
               ))
             }

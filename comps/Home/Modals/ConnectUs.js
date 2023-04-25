@@ -46,13 +46,12 @@ function ConnectUs({ isOpen, closeModal }) {
         className="px-4 text-left"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <h1 className="df gap-3 -mt-1 mb-4 text-xl lg:text-[26px] font-bold text-[#202020]">
+        <h1 className="df -mt-1 mb-4 text-xl lg:text-[26px] font-bold text-[#202020]">
           <Image
-            height={24}
-            width={24}
+            height={28}
+            width={28}
             src="/icon-truseve.png"
             alt=""
-            className="rotate-12 scale-[1.2] -ml-3"
           />
           Connect with us !
         </h1>

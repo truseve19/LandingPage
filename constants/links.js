@@ -3,88 +3,31 @@ const links = [
     to: "/",
     title: "Hardware",
     list: [
-      {
-        to: "/",
-        title: "Desktop"
-      },
-      {
-        to: "/",
-        title: "Laptops"
-      },
-      {
-        to: "/",
-        title: "Workstation"
-      },
-      {
-        to: "/",
-        title: "Monitors"
-      },
-      {
-        to: "/",
-        title: "Printers"
-      },
-      {
-        to: "/",
-        title: "Scanners"
-      },
-      {
-        to: "/",
-        title: "Plotters"
-      },
-      {
-        to: "/",
-        title: "Speakers"
-      },
-      {
-        to: "/",
-        title: "Webcam"
-      },
-      {
-        to: "/",
-        title: "UPS"
-      },
+      "Desktop",
+      "Laptops",
+      "Workstation",
+      "Monitors",
+      "Printers",
+      "Scanners",
+      "Plotters",
+      "Speakers",
+      "Webcam",
+      "UPS",
     ]
   },
   {
     to: "/",
     title: "Software",
     list: [
-      {
-        to: "/",
-        title: "Email Platform"
-      },
-      {
-        to: "/",
-        title: "Mail Server"
-      },
-      {
-        to: "/",
-        title: "Anti-Virus"
-      },
-      {
-        to: "/",
-        title: "Firewall Licenses"
-      },
-      {
-        to: "/",
-        title: "Operating System (OS)"
-      },
-      {
-        to: "/",
-        title: "Meeting Platform"
-      },
-      {
-        to: "/",
-        title: "CRM"
-      },
-      {
-        to: "/",
-        title: "Website Development"
-      },
-      {
-        to: "/",
-        title: "Native Application Development"
-      },
+      "Email Platform",
+      "Mail Server",
+      "Anti-Virus",
+      "Firewall Licenses",
+      "Operating System (OS)",
+      "Meeting Platform",
+      "CRM",
+      "Website Development",
+      "Native Application Development",
     ]
   },
   {
@@ -109,128 +52,50 @@ const links = [
     to: "/",
     title: "Networking",
     list: [
-      {
-        to: "/",
-        title: "IP Phones"
-      },
-      {
-        to: "/",
-        title: "Wi-fi Routers"
-      },
-      {
-        to: "/",
-        title: "Modem"
-      },
-      {
-        to: "/",
-        title: "Switches"
-      },
-      {
-        to: "/",
-        title: "LAN Connectivity"
-      },
+      "IP Phones",
+      "Wi-fi Routers",
+      "Modem",
+      "Switches",
+      "LAN Connectivity",
     ]
   },
   {
     to: "/",
     title: "Storage & Data Center",
     list: [
-      {
-        to: "/",
-        title: "On Permises Server"
-      },
-      {
-        to: "/",
-        title: "Cloud Server"
-      },
-      {
-        to: "/",
-        title: "Pen Drive"
-      },
-      {
-        to: "/",
-        title: "Memory Card"
-      },
-      {
-        to: "/",
-        title: "Hard Disk Drive (HDD)"
-      },
-      {
-        to: "/",
-        title: "Solid State Drive (SSD)"
-      },
+      "On Permises Server",
+      "Cloud Server",
+      "Pen Drive",
+      "Memory Card",
+      "Hard Disk Drive (HDD)",
+      "Solid State Drive (SSD)",
     ]
   },
   {
     to: "/",
     title: "Security",
     list: [
-      {
-        to: "/",
-        title: "CCTV"
-      },
-      {
-        to: "/",
-        title: "Bio Metrics"
-      },
-      {
-        to: "/",
-        title: "Automatic Sensors"
-      },
-      {
-        to: "/",
-        title: "Barcode Devices"
-      },
-      {
-        to: "/",
-        title: "Point of Sale Machine"
-      },
-      {
-        to: "/",
-        title: "Attendance Machine"
-      },
+      "CCTV",
+      "Bio Metrics",
+      "Automatic Sensors",
+      "Barcode Devices",
+      "Point of Sale Machine",
+      "Attendance Machine",
     ]
   },
   {
     to: "/",
     title: "Speciality products",
     list: [
-      {
-        to: "/",
-        title: "AR & VR Headsets"
-      },
-      {
-        to: "/",
-        title: "Hololens"
-      },
-      {
-        to: "/",
-        title: "Drones"
-      },
-      {
-        to: "/",
-        title: "Video Conferencing Kits"
-      },
-      {
-        to: "/",
-        title: "Smart Board"
-      },
-      {
-        to: "/",
-        title: "Interactive Display Panel"
-      },
-      {
-        to: "/",
-        title: "Television"
-      },
-      {
-        to: "/",
-        title: "Paper Shedder"
-      },
-      {
-        to: "/",
-        title: "Mobiles"
-      },
+      "AR & VR Headsets",
+      "Hololens",
+      "Drones",
+      "Video Conferencing Kits",
+      "Smart Board",
+      "Interactive Display Panel",
+      "Television",
+      "Paper Shedder",
+      "Mobiles",
     ]
   },
 ]
