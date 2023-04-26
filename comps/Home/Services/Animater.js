@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Transition } from '@headlessui/react';
 
-function Animater({ data = [], selected, wrapperCls = "", }) {
+function Animater({ data = [], animate = {}, selected, wrapperCls = "", }) {
   return (
     <div className={`dc key-service-box ${wrapperCls}`}>
       {
@@ -12,10 +12,10 @@ function Animater({ data = [], selected, wrapperCls = "", }) {
             className={`dc flex-col key-service-img-box ${d?.className || ""}`}
             enter="transition-transform duration-1000"
             leave="transition-transform duration-700"
-            enterFrom={d.animate.enterFrom}
-            enterTo={d.animate.enterTo}
-            leaveFrom={d.animate.enterTo}
-            leaveTo={d.animate.leaveTo}
+            enterFrom={animate?.enterFrom}
+            enterTo={animate?.enterTo}
+            leaveFrom={animate?.enterTo}
+            leaveTo={animate?.leaveTo}
           >
             <Image {...d.imgProps} />
           </Transition>

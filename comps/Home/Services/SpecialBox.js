@@ -9,6 +9,7 @@ function SpecialBox({ selected }) {
           <Animater
             key={d.id}
             data={d.list}
+            animate={d.animate}
             selected={selected}
             wrapperCls={`flex-1 ${d.className}`}
           />

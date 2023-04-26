@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { data1, data2, data3, data4, data5, data6, dataMid } from './data';
+import {
+  data1, data2, data3, data4, data5, data6, dataMid,
+  animate_RL, animate_LR, animate_data3,
+  animate_TB, animate_data5,
+} from './data';
 import SpecialBox from "./SpecialBox";
 import Animater from "./Animater";
 
@@ -38,16 +42,16 @@ function Services() {
         onMouseLeave={set}
         className="service-grid grid gap-2 xs:gap-4 sm:gap-6 w-fit mx-auto p-6 sm:p-12 rounded-2xl md:rounded-3xl lg:rounded-[35px] border border-[#98F9FF]"
       >
-        <Animater selected={selected} data={data1} />
-        <Animater selected={selected} data={data2} wrapperCls="col-span-2" />
-        <Animater selected={selected} data={data3} />
+        <Animater selected={selected} data={data1} animate={animate_RL} />
+        <Animater selected={selected} data={data2} animate={animate_LR} wrapperCls="col-span-2" />
+        <Animater selected={selected} data={data3} animate={animate_data3} />
 
         <SpecialBox selected={selected} />
 
-        <Animater selected={selected} data={data4} />
-        <Animater selected={selected} data={data5} />
-        <Animater selected={selected} data={dataMid} wrapperCls="md:hidden" />
-        <Animater selected={selected} data={data6} wrapperCls="col-span-2" />
+        <Animater selected={selected} data={data4} animate={animate_TB} />
+        <Animater selected={selected} data={data5} animate={animate_data5} />
+        <Animater selected={selected} data={dataMid} animate={animate_RL} wrapperCls="md:hidden" />
+        <Animater selected={selected} data={data6} animate={animate_LR} wrapperCls="col-span-2" />
       </div>
 
       <div
