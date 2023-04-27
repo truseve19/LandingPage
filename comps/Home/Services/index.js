@@ -8,21 +8,34 @@ import SpecialBox from "./SpecialBox";
 import Animater from "./Animater";
 
 function Services() {
-  const [selected, setSelected] = useState(10)
+  const [isSmallScreen, setIsSmallScreen] = useState(false)
+  const [selected, setSelected] = useState(0)
   const timerRef = useRef()
 
-  // useEffect(() => {
-  //   timerRef.current = setInterval(() => {
-  //     setSelected(p => p === 3 ? 0 : p + 1)
-  //   }, 3000)
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)")
+    setIsSmallScreen(mediaQuery.matches)
 
-  //   return () => clearInterval(timerRef.current)
-  // }, [])
+    const handler = e => setIsSmallScreen(e.matches)
+    mediaQuery.addEventListener("change", handler)
+
+    return () => mediaQuery.removeEventListener("change", handler)
+  }, [])
+
+  useEffect(() => {
+    timerRef.current = setInterval(() => {
+      let max = isSmallScreen ? 8 : 10
+      setSelected(p => p === max ? 0 : p + 1)
+    }, 3000)
+
+    return () => clearInterval(timerRef.current)
+  }, [isSmallScreen])
 
   const set = () => {
-    // timerRef.current = setInterval(() => {
-    //   setSelected(p => p === 3 ? 0 : p + 1)
-    // }, 3000)
+    timerRef.current = setInterval(() => {
+      let max = isSmallScreen ? 8 : 10
+      setSelected(p => p === max ? 0 : p + 1)
+    }, 3000)
   }
 
   return (
@@ -60,13 +73,15 @@ function Services() {
         className="dc w-fit mx-auto gap-4 mt-4 xs:mt-6 md:mt-8"
       >
         {
-          [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(a => (
-            <button
-              key={a}
-              className={`h-3 p-0 rounded-full transition-all duration-500 ${selected === a ? "w-5 bg-[#98F9FF]" : "w-3 bg-white opacity-80 hover:opacity-100"} hover:bg-[#98F9FF]`}
-              onClick={() => setSelected(a)}
-            ></button>
-          ))
+          [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            .filter((a, i) => isSmallScreen ? i < 9 : true)
+            .map(a => (
+              <button
+                key={a}
+                className={`h-3 p-0 rounded-full transition-all duration-500 ${selected === a ? "w-5 bg-[#98F9FF]" : "w-3 bg-white opacity-80 hover:opacity-100"} hover:bg-[#98F9FF]`}
+                onClick={() => setSelected(a)}
+              ></button>
+            ))
         }
       </div>
     </section>

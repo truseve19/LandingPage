@@ -940,6 +940,46 @@ export const dataSpecial = [
           className: "md:hidden",
         },
       },
+      {
+        id: 4,
+        imgProps: {
+          src: "/img/home/service/aws.webp",
+          alt: "",
+          width: 56,
+          height: 56,
+          className: "md:hidden",
+        },
+      },
+      {
+        id: 5,
+        imgProps: {
+          src: "/img/home/service/essl.png",
+          alt: "",
+          width: 68,
+          height: 68,
+          className: "md:hidden",
+        },
+      },
+      {
+        id: 6,
+        imgProps: {
+          src: "/img/home/service/Konica_minolta.png",
+          alt: "",
+          width: 68,
+          height: 68,
+          className: "md:hidden",
+        },
+      },
+      {
+        id: 7,
+        imgProps: {
+          src: "/img/home/service/newline.png",
+          alt: "",
+          width: 68,
+          height: 68,
+          className: "md:hidden",
+        },
+      },
     ]
   },
 ]
@@ -980,6 +1020,51 @@ export const dataMid = [
       alt: "",
       width: 60,
       height: 60,
+    },
+  },
+  {
+    id: 4,
+    imgProps: {
+      src: "/img/home/service/Sennheiser.png",
+      alt: "",
+      width: 60,
+      height: 60,
+    },
+  },
+  {
+    id: 5,
+    imgProps: {
+      src: "/img/home/service/Ubiquiti_Networks.png",
+      alt: "",
+      width: 80,
+      height: 80,
+    },
+  },
+  {
+    id: 6,
+    imgProps: {
+      src: "/img/home/service/Viewsonic.png",
+      alt: "",
+      width: 70,
+      height: 70,
+    },
+  },
+  {
+    id: 7,
+    imgProps: {
+      src: "/img/home/service/Western_Digital.png",
+      alt: "",
+      width: 80,
+      height: 80,
+    },
+  },
+  {
+    id: 8,
+    imgProps: {
+      src: "/img/home/service/Windows.png",
+      alt: "",
+      width: 80,
+      height: 80,
     },
   },
 ]
