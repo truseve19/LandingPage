@@ -7,7 +7,7 @@ export default {
     site_name: "Truseve"
   },
   twitter: {
-    site: "@",
+    site: "@Truseve_",
     cardType: 'summary_large_image',
   }
 }

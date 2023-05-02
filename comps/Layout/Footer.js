@@ -1,6 +1,47 @@
 import Image from "next/image";
 import Link from "next/link";
 
+function SocialImg({ src, link }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <Image
+        src={src}
+        alt=""
+        width={24}
+        height={24}
+      />
+    </a>
+  )
+}
+
+const socials = [
+  {
+    key: 1,
+    src: "/img/home/footer/fb.png",
+    link: "https://www.facebook.com/truseve",
+  },
+  {
+    key: 2,
+    src: "/img/home/footer/insta.png",
+    link: "https://www.instagram.com/truseve_enterprises_/",
+  },
+  {
+    key: 3,
+    src: "/img/home/footer/twitter.png",
+    link: "https://twitter.com/Truseve_",
+  },
+  {
+    key: 4,
+    src: "/img/home/footer/watsapp.png",
+    link: "https://wa.me/message/N3B5R2A3O5HFG1",
+  },
+  {
+    key: 5,
+    src: "/img/home/footer/linkedin.png",
+    link: "https://www.linkedin.com/company/truseve-enterprises/",
+  },
+]
+
 function Footer() {
   return (
     <footer className="p-6 sm:p-8 md:py-12 text-[15px] bg-[#E6E8ED] text-[#525A62]">
@@ -43,31 +84,9 @@ function Footer() {
             No. 5, 2nd Floor, REACH IT ASIA, 1st Street, <br />
             Cenotaph Road, Teynampet, Chennai - 600018
           </div>
+
           <div className="df gap-4 flex-wrap">
-            <Image
-              src="/img/home/footer/fb.png"
-              alt=""
-              width={24}
-              height={24}
-            />
-            <Image
-              src="/img/home/footer/insta.png"
-              alt=""
-              width={24}
-              height={24}
-            />
-            <Image
-              src="/img/home/footer/twitter.png"
-              alt=""
-              width={24}
-              height={24}
-            />
-            <Image
-              src="/img/home/footer/watsapp.png"
-              alt=""
-              width={24}
-              height={24}
-            />
+            {socials.map(a => <SocialImg {...a} />)}
           </div>
         </div>
       </div>

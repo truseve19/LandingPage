@@ -980,6 +980,16 @@ export const dataSpecial = [
           className: "md:hidden",
         },
       },
+      {
+        id: 8,
+        imgProps: {
+          src: "/img/home/service/TSC.png",
+          alt: "",
+          width: 68,
+          height: 68,
+          className: "md:hidden",
+        },
+      },
     ]
   },
 ]
