@@ -1,6 +1,6 @@
 const links = [
   {
-    to: "/",
+    to: "/hardware",
     title: "Hardware",
     list: [
       "Desktop",

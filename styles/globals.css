@@ -215,6 +215,28 @@ nav {
   animation: progress 8s linear;
 }
 
+/* hardware */
+.hardware-products-p-x {
+  padding-inline: clamp(40px, 10%, 140px);
+}
+
+.hardware-products:nth-child(odd) .hardware-products-img-wrapper {
+  background: linear-gradient(-307.39deg, rgba(194, 227, 251, 0.69) 39.87%, rgba(255, 255, 255, 0) 129.66%);
+}
+
+.hardware-products:nth-child(even) .hardware-products-img-wrapper {
+  background: linear-gradient(307.39deg, rgba(194, 227, 251, 0.69) 39.87%, rgba(255, 255, 255, 0) 129.66%);
+}
+
+.hardware-products:nth-child(odd) .hadware-placeholder-img {
+  left: calc(-10% - 1rem);
+}
+
+.hardware-products:nth-child(even) .hadware-placeholder-img {
+  @apply rotate-180;
+  right: calc(-10% - 1rem);
+}
+
 @keyframes progress {
   0% {
     width: 0;
@@ -244,5 +266,9 @@ nav {
   .nav-products {
     @apply columns-6;
     width: clamp(900px, 80%, 1100px);
+  }
+  
+  .hardware-products:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
