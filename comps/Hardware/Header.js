@@ -3,9 +3,9 @@ import ConnectUsBtn from "../Common/ConnectUsBtn";
 function Header() {
   return (
     <section className="hardware-products-p-x max-sm:py-20 relative text-white">
-      <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] xl:leading-[1.2] font-bold">
-        The Best Hardwares for <br />
-        Unbeatable Performance, <br />
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] xl:leading-[1.2] font-bold">
+        The Best Hardwares for <br className="hidden xs:block" />
+        Unbeatable Performance, <br className="hidden xs:block" />
         Customization, and Reliability!
       </h1>
 
