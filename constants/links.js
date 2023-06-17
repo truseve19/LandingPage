@@ -9,11 +9,16 @@ const links = [
       "Monitors",
       "Printers",
       "Scanners",
-      "Plotters",
       "Speakers",
+      "Television",
       "Webcam",
       "UPS",
-    ]
+      "Paper Shredder",
+      "Mobiles",
+    ].map(a => ({
+      to: `/hardware/#${a}`,
+      title: a,
+    }))
   },
   {
     to: "/",

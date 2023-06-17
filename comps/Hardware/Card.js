@@ -2,8 +2,11 @@ import Image from "next/image";
 
 function Card({ title, para, imgs = [] }) {
   return (
-    <div className="hardware-products df flex-col lg:flex-row gap-5 sm:gap-8 lg:gap-12 xl:gap-16 mb-16 md:mb-20 relative">
-      <div className="hardware-products-img-wrapper dc max-xs:max-w-[250px] xs:w-72 sm:w-80 xl:w-[412px] lg:h-80 p-8 shrink-0 rounded-xl">
+    <div
+      className="hardware-products df flex-col mdb:flex-row gap-5 lg:gap-12 xl:gap-16 mb-16 md:mb-20 relative"
+      id={title}
+    >
+      <div className="hardware-products-img-wrapper dc w-full sm:w-80 xl:w-[412px] h-72 lg:h-80 p-8 xs:p-16 sm:p-8 shrink-0 rounded-t-xl mdb:rounded-b-xl">
         <img
           src={`/img/hardware/${title}.png`}
           alt=""

@@ -1,3 +1,4 @@
+import ConnectUsBtn from "../Common/ConnectUsBtn";
 
 function Header() {
   return (
@@ -12,9 +13,10 @@ function Header() {
         30 years of service in Hardware industry
       </p>
 
-      <button className="px-8 py-2 lg:px-12 lg:py-3 text-sm md:text-base font-medium bg-[#002D58] border border-[#007BFF] rounded-[5px]">
-        Connect Now
-      </button>
+      <ConnectUsBtn
+        txt="Connect Now"
+        className="px-8 py-2 lg:px-12 lg:py-3 text-sm md:text-base font-medium bg-[#002D58] border border-[#007BFF] rounded-[5px]"
+      />
 
       <img
         className="absolute inset-0 object-cover w-full h-full -z-10"

@@ -15,7 +15,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 3rem;
+    scroll-padding-top: 6rem;
   }
 
   body {
@@ -220,6 +220,10 @@ nav {
   padding-inline: clamp(40px, 10%, 140px);
 }
 
+.hardware-products:nth-child(even) {
+  @apply mdb:flex-row-reverse;
+}
+
 .hardware-products:nth-child(odd) .hardware-products-img-wrapper {
   background: linear-gradient(-307.39deg, rgba(194, 227, 251, 0.69) 39.87%, rgba(255, 255, 255, 0) 129.66%);
 }
@@ -266,9 +270,5 @@ nav {
   .nav-products {
     @apply columns-6;
     width: clamp(900px, 80%, 1100px);
-  }
-  
-  .hardware-products:nth-child(even) {
-    flex-direction: row-reverse;
   }
 }
