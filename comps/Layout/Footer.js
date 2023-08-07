@@ -81,8 +81,8 @@ function Footer() {
         <div>
           <div className="mb-4">
             <strong>Truseve Enterprises Private Limited,</strong> <br />
-            No. 5, 2nd Floor, REACH IT ASIA, 1st Street, <br />
-            Cenotaph Road, Teynampet, Chennai - 600018
+            Aditya Business Centre. D79, Friends Colony,  <br />
+            3rd street, Anna Nagar East, Chennai 600102.
           </div>
 
           <div className="df gap-4 flex-wrap">
